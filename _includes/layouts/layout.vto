@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/Hub">Hub</a>
+        <a href="/Blog">Blog</a>
+    </nav>
+        <div class="breadcrumb">
+        {{ url.split("/").filter(part => part).map((part, i, arr) => {
+            const path = "/" + arr.slice(0, i + 1).join("/");
+            return `<a href="${path}">${part}</a>`;
+        }).join(" > ") }}
+    </div>
+    
+  {{ content }}
+</body>
+</html>

@@ -1,0 +1,56 @@
+{% set currentPage = url | replace("/index.html", "") | replace(".html", "") | split("/") %}
+{% set breadcrumb = [] %}
+
+<nav aria-label="Breadcrumb" class="breadcrumb">
+    <ol>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        
+        {% for segment, index in currentPage %}
+            {% if segment != "" %}
+                {% set path = currentPage[0..index+1] | join("/") %}
+                {% set title = segment | capitalize %}
+                
+                <li>
+                    {% if not isLast(index, currentPage) %}
+                        <a href="/{{ path }}">{{ title }}</a>
+                    {% else %}
+                        <span aria-current="page">{{ title }}</span>
+                    {% endif %}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</nav>
+
+<style>
+    .breadcrumb ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .breadcrumb li:not(:last-child)::after {
+        content: "/";
+        margin-left: 0.5rem;
+        color: #666;
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+        color: #0066cc;
+    }
+
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+
+    .breadcrumb [aria-current="page"] {
+        color: #666;
+        font-weight: 500;
+    }
+</style>

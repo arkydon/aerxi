@@ -1,0 +1,16 @@
+---
+title: This is my website
+templateEngine: [vto, md]
+---
+
+# Welcome to my website
+
+This is my first page using **Lume,** a static site generator for Deno.
+
+I hope you enjoy it.
+
+<ul>
+  {{ for page of search.pages("category=blog") }}
+  <li> <a href={{page.url}}> {{ page.title }} </a></li>
+  {{ /for }}
+</ul>

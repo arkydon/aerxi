@@ -1,0 +1,17 @@
+[
+    {"full": "1.gif",
+        "thumb": "thumbnails/1_thumb.gif"
+    },
+    {"full": "2.gif",
+    "thumb": "thumbnails/2_thumb.gif"
+    },
+    {"full":"3.jpg",
+    "thumb": "thumbnails/3_thumb.jpg"
+    },
+    {"full":"4.jpg",
+    "thumb": "thumbnails/4_thumb.jpg"
+    },
+    {"full": "5.jpg",
+    "thumb":  "thumbnails/5_thumb.jpg"
+    }
+]

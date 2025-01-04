@@ -1,0 +1,19 @@
+---
+title: Hub Links
+url: /Hub/Links/
+templateEngine: [vto, md]
+---
+
+{{ comp.hublist({text: title, hubcategory: "links"}) }}
+
+{{#
+# Notes
+<ul>
+  {{ for page of search.pages("category=links") }}
+  <li> <a href={{page.url}}> {{ page.title }} </a></li>
+  {{ /for }}
+</ul>
+
+
+
+#}}

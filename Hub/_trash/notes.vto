@@ -1,0 +1,13 @@
+---
+title: Hub Notes
+templateEngine: [vto, md]
+url: /hub/notes/
+---
+
+# Notes
+
+<ul>
+  {{ for page of search.pages("category=notes") }}
+  <li> <a href={{page.url}}> {{ page.title }} </a></li>
+  {{ /for }}
+</ul>
