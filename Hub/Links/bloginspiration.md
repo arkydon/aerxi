@@ -1,7 +1,12 @@
 ---
 title : Articles that will inspire you to write a blog or make your own website
 date : [2024-12-21]
-category : links
+tags :
+    - hub   
+    - links
+
+layout : layouts/hubpost.vto
+
 ---
 
 - [Write for yourself](https://samhawken.bearblog.dev/write-for-yourself/)

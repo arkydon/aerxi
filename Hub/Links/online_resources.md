@@ -1,7 +1,13 @@
 ---
-title : "Resources (images, videos, etc) from the web"
-date : 2021-08-11
-category : links
+title : Resources (images, videos, etc) from the web
+date : [2021-08-11]
+
+tags :
+    - hub
+    - links
+
+layout: layouts/hubpost.vto
+
 ---
 
 #### General

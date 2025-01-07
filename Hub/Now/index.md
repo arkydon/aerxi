@@ -1,6 +1,12 @@
 ---
 title : "What I'm doing"
-category : notes
+
+tags : 
+    - hub
+    - notes
+
+layout: layouts/hubpost.vto
+
 ---
 
 **Currently**

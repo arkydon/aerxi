@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="/styles.css" />
-</head>
+
+{{ include "partials/head.vto" }}
+
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/Hub">Hub</a>
-        <a href="/Blog">Blog</a>
-    </nav>
-        <div class="breadcrumb">
-        {{ url.split("/").filter(part => part).map((part, i, arr) => {
-            const path = "/" + arr.slice(0, i + 1).join("/");
-            return `<a href="${path}">${part}</a>`;
-        }).join(" > ") }}
-    </div>
-    
-  {{ content }}
+    <header>
+      <div class="header-text">
+        <h1 class="title-header"><a href="/"><span>Arky's</span> <span>Corner</span></a></h1>
+        <div class="header-pic"> <img src="/static/greyrabbit.svg" alt=""/> </div>
+      </div>
+        <hr class="header-hr">
+
+    </header>
+    {{include "partials/nav.vto"}}
+
+    <hr/>
+  <main>
+    {{ content }}
+  </main>
 </body>
 </html>

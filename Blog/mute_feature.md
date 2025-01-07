@@ -2,6 +2,11 @@
 title : "How to make the mute feature better"
 date : 2024-03-23
 category: blog
+tags : 
+    - blog
+
+layout : layouts/post.vto
+
 og_description : "How to make the mute feature better"
 ---
 

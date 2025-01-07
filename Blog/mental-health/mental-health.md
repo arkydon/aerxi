@@ -3,13 +3,18 @@ title : "My mental health"
 date : 2024-01-01
 basename: ""
 category: blog
+tags : 
+    - blog
+    
+layout : layouts/post.vto
+
 og_description : "My mental health"
 ---
 *This is a more refined blog article about my mental health that I wrote and shared last year.*
 
 <!-- more -->
 
-{{ img(path:"@/blog/mental health/dislike.png", class:"graphik") }} Wish I could say I miss being a kid, but like many people who didn't grow up with a normal childhood, I don't. It sucked because I was struggling with problems with my mental health that were made worse by religion and school.
+![An image](dislike.png){.blog-graphic} Wish I could say I miss being a kid, but like many people who didn't grow up with a normal childhood, I don't. It sucked because I was struggling with problems with my mental health that were made worse by religion and school.
 
 **School**
 

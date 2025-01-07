@@ -2,9 +2,12 @@
 title: Hub Links
 url: /Hub/Links/
 templateEngine: [vto, md]
+
+layout: layouts/hublayout.vto
+
 ---
 
-{{ comp.hublist({text: title, hubcategory: "links"}) }}
+{{ comp.hublist({text: title, hubtag: "links"}) }}
 
 {{#
 # Notes

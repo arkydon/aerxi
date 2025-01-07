@@ -1,0 +1,10 @@
+---
+layout: layouts/layout.vto
+---
+<div class="blog-post">
+    <article>
+        <h2>{{title}}</h2>
+        <time class="blog-post-date">{{date |> date('PPP')}}</time>
+        {{content}}
+    </article>
+</div>

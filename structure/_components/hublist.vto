@@ -1,8 +1,10 @@
 {{text}}
 
 <ul>
-  {{ for page of search.pages(`category=${hubcategory}`) }}
+  {{ for page of search.pages(`hub ${hubtag}`) }}
   <li> <a href={{page.url}}> {{ page.title }} </a></li>
   {{ /for }}
 </ul>
 
+
+{{# `category=${hubcategory} #}}

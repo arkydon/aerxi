@@ -1,7 +1,13 @@
 ---
 title : Useful websites around the web
-date : 2021-08-11
-category : links
+date : [2021-08-11]
+
+tags :
+    - hub   
+    - links
+
+layout: layouts/hubpost.vto
+
 ---
 
 #### Space : 

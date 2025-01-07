@@ -2,6 +2,8 @@
 title: Hub Links
 url: /Hub/Music/
 templateEngine: [vto, md]
+
+layout: layouts/hublayout.vto
 ---
 
-{{ comp.hublist({text: title, hubcategory: "music"}) }}
+{{ comp.hublist({text: title, hubtag: "music"}) }}

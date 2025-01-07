@@ -2,10 +2,17 @@
 title: blog
 url: /blog/
 templateEngine: [vto, md]
+
 ---
 
+## Blogs
+<div class="blog-list">
 <ul>
-  {{ for page of search.pages("category=blog") }}
-  <li> <a href={{page.url}}> {{ page.title }} </a></li>
+  {{ for page of search.pages("blog") }}
+  <li> 
+    <a href={{page.url}}> {{ page.title }} </a>
+    <time class="blog-list-date">{{date |> date('PPP')}}</time>
+  </li>
   {{ /for }}
 </ul>
+</div>

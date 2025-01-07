@@ -1,6 +1,12 @@
 ---
 layout: layouts/layout.vto
-templateEngine: [vto, md]
 ---
+
+<div class="breadcrumb">
+    {{ url.split("/").filter(part => part).map((part, i, arr) => {
+        const path = "/" + arr.slice(0, i + 1).join("/");
+            return `<a href="${path}">${part}</a>`;
+    }).join(" > ") }}
+</div>
 
 {{content}}
