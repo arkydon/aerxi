@@ -2,72 +2,91 @@
 @use "./styles/variables.scss";
 
 body {
+    display: flex; // Without this, there will be a space between Nav and main
+    flex-direction: column;
+
     font-family: "Acumin Pro SemiCondensed","Arial";
     font-size: var(--main-font-size);
     line-height: 1.5;
     max-width: 40em;
-    
-    margin: 1em;
-    margin-top: 0.5em;
+
+    margin: 0;
+    padding: var(--section-padding-block) var(--section-padding-inline);
+
+    -webkit-font-smoothing: antialiased; /* For WebKit browsers (e.g., Chrome, Safari) */
+    -moz-osx-font-smoothing: grayscale;  /* For Firefox on macOS */
 
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Acumin Pro Condensed";
     font-weight: 500;
+    margin-block: 1rem;
+    color: var(--main-color);
 }
+
 a {
     text-decoration: none;
-    text-decoration: 1px underline;
-    text-underline-offset: 3px;
-    color:black;
+    text-decoration: 2px underline dashed var(--main-color);
+    text-underline-offset: 4px;
+    /* color: #3F51B5; */
+    color: inherit;
 }
+p {
+    //margin: 0;
+    //padding: 0;
+    margin-block: 0.5rem;
+    margin-block: 1rem;
+}
+
 // ====== Header css ====
 header {
-    //display: flex;
-    //justify-content: space-between;
-    //display: grid;
-    //grid-template-columns: 2fr 1fr;
-
-    //display: grid;
-    //justify-content: space-between;
+    //padding: var(--section-padding-block) var(--section-padding-inline);
 }
 .header-pic {
     text-align: center;
+    display: flex;
 }
 .header-pic img {
-    width: 66px;
-    transform: translate(-25px, 11px);
-    //width: 66px;
-    /* transform: translate(-25px, 11px); */
     width: 30px;
-    //transform: translate(25px, 18px);    
-    transform: translate(0px, 23px);   
 }
 .header-text {
     display: flex;
     justify-content: space-between;
+
+    font-size: 1.5rem;
 }
 nav {
-    //font-family: "Acumin Pro Condensed","Arial";
+    //padding: 1rem;
+    //padding-inline: 2rem;
 }
 nav a {
     text-decoration: none; // remove underline on nav items
     font-family: "Acumin Pro Condensed", "Arial";
     font-size: 105%;
 }
+nav a.active {
+    font-weight: bold;
+    /* color: #ff0000; */
+    /* text-decoration: underline; */
+}
+
 span.nav-link-divider {
     color: darkgrey;
 }
 
+h1.title-header {
+    margin-block: 0rem;
+}
 // ---- Style header title to be coloured and clipped ---
 .title-header a {
     border-bottom: none;
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    margin: auto;
+    //margin: auto;
 
     text-transform: uppercase;
+    text-decoration: none;
     font-family: var(--font-condensed);
     font-weight: 400;
     background: linear-gradient(219deg, var(--color-1) 19%, transparent 19%, transparent 20%, var(--color-2) 20%, var(--color-2) 39%, transparent 39%, transparent 40%, var(--color-3) 40%, var(--color-3) 59%, transparent 59%, transparent 60%, var(--color-4) 60%, var(--color-4) 79%, transparent 79%, transparent 80%, var(--color-5) 80%);
@@ -77,6 +96,24 @@ span.nav-link-divider {
 }
 
 // ====
+main {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 60vh;
+}
+
+.hello-panel.panel {
+    //padding: var(--section-padding-block) var(--section-padding-inline);
+}
+
+.home-blog-list {
+    //padding: var(--section-padding-block) var(--section-padding-inline);
+    //background: #f5dcd1;
+}
+.blog-list, .blog-post {
+    //padding: var(--section-padding-block) var(--section-padding-inline);
+}
 
 //Style the various graphic images in the blog articles ====
 img.blog-graphic {
@@ -109,33 +146,40 @@ blockquote {
 }
 
 hr {
-    margin-block: 5px;
+    margin: 0.5rem 0; /* Consistent vertical spacing */
+    border: none; /* Remove default border */
+    height: 4px; /* Set the thickness of the line */
+    background-image: repeating-linear-gradient(
+      to right,
+      #c4e17f 0, #c4e17f 50px,
+      #81c7af 50px, #81c7af 100px,
+      #fad071 100px, #fad071 150px,
+      #f0766b 150px, #f0766b 200px,
+      #db9dbe 200px, #db9dbe 250px,
+      #c49cdf 250px, #c49cdf 300px,
+      #6599e2 300px, #6599e2 350px,
+      #61c2e4 350px, #61c2e4 400px
+    );
+    background-size: 400px 100%; /* Match gradient width to total range */
+    background-repeat: repeat-x; /* Ensure horizontal repetition */
 }
 
 hr.header-hr {
-    margin-block-start: 0;
-}
-
-hr {
-    //border: 1px dashed #d5d5d5;
-    margin-block: 5px;
+    //margin-block-start: 0;
 }
 // =====Spacing test=====
-p {
-    margin: 0;
-    padding: 0;
-    margin-block: 0.5rem;
-    margin-block: 1rem;
-}
 
 ul {
     margin: 0;
+    padding-inline-start: 1.5rem;
 }
-
-
-h1, h2, h3, h4, h5, h6 {
+ul li {
     margin-block: 0.5rem;
 }
+li::marker {
+    color: var(--main-color);
+}
+
 
 //===============
 .home-blog-list ul, .blog-list ul{
@@ -191,4 +235,15 @@ time.blog-list-date{
     position: relative;
     //border-inline-start: 2px solid #d5d5d5;
     right: 1rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    //color: #d1d1d1;
+    //background: #262626;
+    padding-block: 1rem;
+}
+footer p {
+    margin-block-start: 2rem;
 }

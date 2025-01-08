@@ -1,0 +1,20 @@
+---
+title: Notes
+templateEngine: [vto, md]
+url: /Notes/
+---
+
+# Notes
+[Changelog](/Notes/Changes) : A list of changes made to the website.
+
+[Now](/Notes/Now/) : A list of things I'm currently doing.
+
+{{# {{ comp.hublist({text: title, hubtag: "notes"}) }} #}}
+
+{{# <ul>
+  {{ for page of search.pages("notes") }}
+  <li> <a href={{page.url}}> {{ page.title }} </a></li>
+  {{ /for }}
+</ul>
+#}}
+

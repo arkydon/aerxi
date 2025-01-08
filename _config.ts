@@ -4,12 +4,14 @@ import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import svgo from "lume/plugins/svgo.ts";
 import lightningCSS from "lume/plugins/lightningcss.ts";
-
+import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import date from "lume/plugins/date.ts";
 
-const site = lume();
+const site = lume({location: new URL("https://arky.netlify.app"),});
 
 site.use(sass());
+
+site.use(slugifyUrls());
 
 site.copy("static/fonts/AcuminPro");
 site.copy("static/favicon.ico");

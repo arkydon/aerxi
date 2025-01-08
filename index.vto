@@ -17,15 +17,15 @@ templateEngine: [vto, md]
   </p>
 </div>
 
-<hr/>
+<hr>
 
-## Latest Blog Posts  
 <div class="home-blog-list">
-<ul>
-  {{ for page of search.pages("category=blog") }}
-  <li> <a href={{page.url}}> {{ page.title }} </a>
-  <time class="blog-list-date">{{date |> date('PPP')}}</time>
-</li>
-  {{ /for }}
-</ul>
+  <h2> Latest Blog Posts </h2>
+  <ul>
+    {{ for page of search.pages("category=blog") }}
+    <li> <a href={{page.url}}> {{ page.title }} </a>
+    <time class="blog-list-date">{{date |> date('PPP')}}</time>
+  </li>
+    {{ /for }}
+  </ul>
 </div>
