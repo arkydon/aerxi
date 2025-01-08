@@ -1,5 +1,5 @@
 ---
-title : "How and why I made this website"
+title : How and why I made this website
 date : 2024-06-07
 basename: ""
 category: blog
@@ -10,11 +10,14 @@ layout : layouts/post.vto
 
 og_description : "How and why I made my website"
 ---
+ > **2025 NOTE** : This post is **outdated**. I have remade this site again from scratch using a different static site engine called **lume** : [🔗lume.land](https://lume.land)
 
 <!-- {{ img(path:"@/blog/How I made this website/repair.png", class:"graphik") }}  -->
 ![An image](repair.png){.blog-graphic} I made this website because I wanted a personal space on the web where I can share and store every useful and non-useful, personal and non-personal piece of information.
 
-I used a *static site generator* called [Zola](https://www.getzola.org/) - a tiny ~25MB single binary (exe) tool. The structure of the website was writen with a templating language called Tera.
+The source code is at [https://github.com/arkydon/aerxi](https://github.com/arkydon/aerxi)
+
+I used a *static site generator* called [🔗Zola](https://www.getzola.org/) - a tiny ~25MB single binary (exe) tool. The structure of the website was writen with a templating language called Tera.
 
 > I tried bearblog but it was too restrictive for what I wanted to make so I decided to build my own website using Zola.
 

@@ -1,5 +1,5 @@
 ---
-title: blog
+title: Blog
 url: /blog/
 templateEngine: [vto, md]
 
@@ -8,10 +8,10 @@ templateEngine: [vto, md]
 <div class="blog-list">
   <h2>Blogs</h2>
   <ul>
-    {{ for page of search.pages("blog") }}
+    {{ for page of search.pages("blog", "date=desc") }}
     <li> 
       <a href={{page.url}}> {{ page.title }} </a>
-      <time class="blog-list-date">{{date |> date('PPP')}}</time>
+      <time class="blog-list-date">{{page.date |> date('HUMAN_DATE')}}</time>
     </li>
     {{ /for }}
   </ul>

@@ -7,7 +7,7 @@ import lightningCSS from "lume/plugins/lightningcss.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import date from "lume/plugins/date.ts";
 
-const site = lume({location: new URL("https://arky.netlify.app"),});
+const site = lume({location: new URL("https://arky.pages.dev"),});
 
 site.use(sass());
 

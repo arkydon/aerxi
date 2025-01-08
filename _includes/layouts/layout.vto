@@ -33,29 +33,7 @@
   </footer>
 
   <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("nav a");
-  const currentPath = window.location.pathname;
-    
-  links.forEach(link => {
-    const linkPath = new URL(link.href).pathname;
-    // Home page - must be exact match
-    if (linkPath === "/" && currentPath === "/") {
-      link.classList.add("active");
-      return;
-    }
 
-    // Other pages
-    if (currentPath.startsWith(linkPath) && linkPath !== "/") {
-      link.classList.add("active");
-    }
-    console.log("link : ", link);
-    console.log("link.href : ", link.href);
-    console.log(linkPath, currentPath);
-    console.log("link.classList : ", link.classList);
-
-  });
-});
   </script>
 
 </body>

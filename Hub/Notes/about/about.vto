@@ -1,0 +1,116 @@
+---
+title : "About"
+url : /Notes/About/
+tags :
+    - hub
+    - notes
+	
+layout: layouts/post.vto
+
+templateEngine: [vto, md]
+---
+
+||||
+|---|---|---|
+|Name|:|Arky|
+|Location|:|Shillong|
+|DoB|:|22.12.1990|
+
+{.table-about}
+
+### Preferences
+{{ set detailsData = [
+  { summ: "Likes", 
+    text: `
+   * Things related to Astronomy: Comets, meteors 🌠, solar activity ☀️
+
+   * Beautiful websites that aren't slow* 
+
+   * *Sunsets* 🌄
+
+   * Cool *rocks* 🪨
+
+    * *Organising* things` },
+  { summ: "Dislikes", 
+    text: `
+   * Getting wet in the rain.
+   * Small talk.
+   * Sports.
+   * Stan wars`},
+]}}
+
+{{ for details of detailsData }}
+  {{comp.details({summ: details.summ, text:details.text})}}
+{{ /for }}
+
+### Favourites
+
+{{set detailsData = [
+{summ:"Games", text: `
+* **Dota**.
+* **Age of Mythology**
+* **Pokemon**.Including Pokemon ROM hacks. (Made one myself)
+* **Minecraft**.
+* **No Man's Sky**.
+`},
+ 
+
+{summ:"Colours", text: `
+* Sepia 
+* Peach Fuzz
+* Salmon
+* Pastels
+`},
+
+
+{summ:"Fonts", text: `
+* Jost
+* Jetbrains Mono
+* Consolas
+`},
+
+{summ:"Singers", text: `
+* Tove Lo
+* Sabrina Carpenter
+* Jeremy Zucker
+* Paramore
+* Jojo
+`},
+
+
+{summ:"TV Show", text: `
+* HIMYM
+* Altered Carbon
+* Wandavision
+* The Originals
+`},
+
+{summ:"TV Movies", text: `
+* Interstellar
+* Cat in the hat
+* Melancholia
+* Independence day
+* War of the worlds
+`},
+
+
+{summ:"Books", text: `
+* The Apocalypse Triptych
+* Age of Miracles
+* Dreamers
+* Lucifer’s Hammer
+* The Rapture
+* Animal Farm
+`},
+
+{summ:"Pokemon", text: `
+* Copperrajah 
+* Breloom
+* Zangoose
+* Meganium
+`},
+]}}
+
+{{ for details of detailsData }}
+  {{comp.details({summ: details.summ, text:details.text})}}
+{{ /for }}

@@ -137,12 +137,15 @@ blockquote p {
     padding: 0;
 }
 blockquote {
-    border-inline-start: 3px solid #8bc34a;
-    margin-inline-start: 1rem;
+    /* border-inline-start: 3px solid #8bc34a; */
+    /* margin-inline-start: 1rem; */
     padding: 1rem;
     font-size: 85%;
     color: #2f4f4f;
     background: #f3f3f3;
+    margin-inline: 0;
+    border-radius: 5px;
+    font-family: 'Acumin Pro SemiCondensed';
 }
 
 hr {
@@ -246,4 +249,60 @@ footer {
 }
 footer p {
     margin-block-start: 2rem;
+}
+
+
+// ======About styling====
+table.table-about {
+    border-collapse: collapse;
+    margin-block-start: 5px;
+}
+table.table-about td {
+    padding-inline-end: 1em;
+    /* border: 1px solid #393939; */
+    /* border-collapse: collapse; */
+}
+table.table-about tr td:first-child {
+    /* color: red; */
+    font-weight: 500;
+    font-family: 'Acumin Pro Condensed';
+    text-transform: uppercase;
+}
+
+
+// Details design
+details {
+    font-size: 0.8em;
+
+    border: 1px dashed #aaa;
+    border-radius: 4px;
+    padding-inline: 12px;
+    padding-block: 5px;
+    margin-block: 10px;
+    margin-inline: 7px;
+}
+  
+summary {
+    font-weight: bold;
+    /* margin: -.5em -.5em 0; */
+    /* padding: .5em; */
+}
+  
+details[open] {
+    //padding: 0.5em;
+}
+  
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+  
+details > summary {
+    list-style-type: ' + ';
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="10" width="8.75" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>');
+}
+
+details[open] > summary {
+    list-style-type: ' - ';
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="10" width="8.75" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>');
 }

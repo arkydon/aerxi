@@ -1,5 +1,5 @@
 ---
-title: This is my website
+title: Arky's Corner
 templateEngine: [vto, md]
 ---
 
@@ -9,11 +9,9 @@ templateEngine: [vto, md]
     </p>
     <p>Read my <a href="/blog/">blog posts</a>.
     <br/>
-    See what's <a href="/hub/Notes/Changes">new</a> in my website. 
+    See what's <a href="/notes/changes">new</a> in my website. 
     <br/>
-    A little about <a href="/about/">me.</a>
-    <br/>
-    My social links are in <a href="https://arkydon.carrd.co">arkydon.carrd.co</a>
+    A little about <a href="/notes/about/">me.</a>
   </p>
 </div>
 
@@ -22,9 +20,9 @@ templateEngine: [vto, md]
 <div class="home-blog-list">
   <h2> Latest Blog Posts </h2>
   <ul>
-    {{ for page of search.pages("category=blog") }}
+    {{ for page of search.pages("category=blog", "date=desc") }}
     <li> <a href={{page.url}}> {{ page.title }} </a>
-    <time class="blog-list-date">{{date |> date('PPP')}}</time>
+    <time class="blog-list-date">{{page.date |> date('HUMAN_DATE')}}</time>
   </li>
     {{ /for }}
   </ul>

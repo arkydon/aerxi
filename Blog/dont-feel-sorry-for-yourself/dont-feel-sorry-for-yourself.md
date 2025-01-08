@@ -1,5 +1,5 @@
 ---
-title : "Don't feel sorry for yourself"
+title : Don't feel sorry for yourself
 date : 2024-03-26
 basename: ""
 category: blog
