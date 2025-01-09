@@ -1,5 +1,6 @@
 @use "./fonts/acuminpro";
 @use "./styles/variables.scss";
+@use "./styles/articlestyling.scss";
 
 body {
     display: flex; // Without this, there will be a space between Nav and main
@@ -56,18 +57,14 @@ header {
     font-size: 1.5rem;
 }
 nav {
-    //padding: 1rem;
-    //padding-inline: 2rem;
-}
-nav a {
-    text-decoration: none; // remove underline on nav items
-    font-family: "Acumin Pro Condensed", "Arial";
-    font-size: 105%;
-}
-nav a.active {
-    font-weight: bold;
-    /* color: #ff0000; */
-    /* text-decoration: underline; */
+    a {
+        text-decoration: none; // remove underline on nav items
+        font-family: "Acumin Pro Condensed", "Arial";
+        font-size: 105%;
+    }
+    a.active {
+        font-weight: bold;
+    }
 }
 
 span.nav-link-divider {
@@ -103,17 +100,7 @@ main {
     min-height: 60vh;
 }
 
-.hello-panel.panel {
-    //padding: var(--section-padding-block) var(--section-padding-inline);
-}
-
-.home-blog-list {
-    //padding: var(--section-padding-block) var(--section-padding-inline);
-    //background: #f5dcd1;
-}
-.blog-list, .blog-post {
-    //padding: var(--section-padding-block) var(--section-padding-inline);
-}
+/*.hello-panel.panel, .home-blog-list, .blog-list, .blog-post {}*/
 
 //Style the various graphic images in the blog articles ====
 img.blog-graphic {
@@ -132,13 +119,7 @@ img.image{
     box-shadow: 0px 0px 4px 0px #979797;
 }
 
-blockquote p {
-    margin: 0;
-    padding: 0;
-}
 blockquote {
-    /* border-inline-start: 3px solid #8bc34a; */
-    /* margin-inline-start: 1rem; */
     padding: 1rem;
     font-size: 85%;
     color: #2f4f4f;
@@ -146,6 +127,11 @@ blockquote {
     margin-inline: 0;
     border-radius: 5px;
     font-family: 'Acumin Pro SemiCondensed';
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 hr {
@@ -167,18 +153,16 @@ hr {
     background-repeat: repeat-x; /* Ensure horizontal repetition */
 }
 
-hr.header-hr {
-    //margin-block-start: 0;
-}
-// =====Spacing test=====
 
 ul {
     margin: 0;
     padding-inline-start: 1.5rem;
+
+    li{
+        margin-block: 0.5rem;
+    }
 }
-ul li {
-    margin-block: 0.5rem;
-}
+
 li::marker {
     color: var(--main-color);
 }
@@ -191,9 +175,7 @@ li::marker {
 
     padding-inline-start: 1rem;
 }
-//.home-blog-list ul li{
-//    list-style-type: none;
-//}
+
 time.blog-post-date {
     font-size: 75%;
     color: grey;
@@ -243,57 +225,13 @@ time.blog-list-date{
 footer {
     text-align: center;
     font-size: 15px;
-    //color: #d1d1d1;
-    //background: #262626;
     padding-block: 1rem;
-}
-footer p {
-    margin-block-start: 2rem;
-}
-
-
-// ======About styling====
-table.table-about {
-    border-collapse: collapse;
-    margin-block-start: 5px;
-}
-table.table-about td {
-    padding-inline-end: 1em;
-    /* border: 1px solid #393939; */
-    /* border-collapse: collapse; */
-}
-table.table-about tr td:first-child {
-    /* color: red; */
-    font-weight: 500;
-    font-family: 'Acumin Pro Condensed';
-    text-transform: uppercase;
+    p {
+        margin-block-start: 2rem;
+    }
 }
 
-//=== Changelog styling ===
-dl.changelog dt {
-    font-weight: bold;
-    //color: blueviolet;
-    font-size: 90%;
-}
-dl.changelog dd {
-    font-family: 'Acumin Pro Condensed';
-}
-dl.changelog {
-    /* border-inline-start: 2px solid rgb(26 26 26); */
-    /* padding-inline-start: 15px; */
-    margin-inline-start: 12px;
-}
-
-ul.changelog li li, ol.changelog li {
-    font-size: 90%;
-    font-family: 'Acumin Pro Condensed';
-}
-.changelog-old{
-    font-size: 90%;
-    font-family: 'Acumin Pro Condensed';
-}
-
-// Details design
+// ==== Details design ======
 details {
     font-size: 0.8em;
 

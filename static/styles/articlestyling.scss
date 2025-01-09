@@ -1,0 +1,40 @@
+// ======About styling====
+table.table-about {
+    border-collapse: collapse;
+    margin-block-start: 5px;
+}
+table.table-about td {
+    padding-inline-end: 1em;
+    /* border: 1px solid #393939; */
+    /* border-collapse: collapse; */
+}
+table.table-about tr td:first-child {
+    /* color: red; */
+    font-weight: 500;
+    font-family: 'Acumin Pro Condensed';
+    text-transform: uppercase;
+}
+
+//=== Changelog styling ===
+dl.changelog dt {
+    font-weight: bold;
+    //color: blueviolet;
+    font-size: 90%;
+}
+dl.changelog dd {
+    font-family: 'Acumin Pro Condensed';
+}
+dl.changelog {
+    /* border-inline-start: 2px solid rgb(26 26 26); */
+    /* padding-inline-start: 15px; */
+    margin-inline-start: 12px;
+}
+
+ul.changelog li li, ol.changelog li {
+    font-size: 90%;
+    font-family: 'Acumin Pro Condensed';
+}
+.changelog-old{
+    font-size: 90%;
+    font-family: 'Acumin Pro Condensed';
+}
