@@ -1,16 +1,20 @@
 :root {
     --main-font-size: 20px;
+    --font-main: "Acumin Pro SemiCondensed","Arial";
     --font-condensed: "Acumin Pro Condensed","Arial";
     --section-padding-inline: 1.5rem;
     --section-padding-block: 1rem;
-    //unset
-    --main-line-height: 30px;
-    --title-header-size: 2em;
-    
     --main-color:rgb(207 63 63);
 
+    // Multi coloured nav header title
+    --color-1: #186cb8;
+    --color-2: #2a9a9f;
+    --color-3: #f1b211;
+    --color-4: #e83611;
+    --color-5: #f9002f;
+
+    // Unused
     --body-color: #ffffff;
-    --panel-color: rgba(37, 43, 37, 0.81);
     --link-color:#5480d0;//#d05454;
 
     --title-header-background-color: #ffeee100;
@@ -18,9 +22,6 @@
     --nav-link-color: var(--main-color);
     --header-title-color: var(--main-color);
     --nav-separator-color:#7eb9da;//#52829e;
-
-    --hub-section-bg-color: #f5f5f5;
-    --hub-intro-bg-color: #f1e9d4;//#d8f1d4;
 
     --h-colors: var(--main-color);
     --hr-color: #454444;
@@ -33,12 +34,6 @@
     --color-5: var(--color-1);
     */
 
-    // Multi coloured nav header title
-     --color-1: #186cb8;
-    --color-2: #2a9a9f;
-    --color-3: #f1b211;
-    --color-4: #e83611;
-    --color-5: #f9002f;
 }
 
 @media screen and (min-width:900px){
