@@ -33,7 +33,27 @@
   </footer>
 
   <script>
-
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll("nav a");
+      const currentUrl = window.location.href;
+    
+      links.forEach(link => {
+        // Normalize URLs by removing trailing slashes
+        const normalizedLinkHref = link.href.replace(/\/$/, "");
+        const normalizedCurrentUrl = currentUrl.replace(/\/$/, "");
+    
+        // Handle the Home link separately
+        if (normalizedLinkHref === window.location.origin || normalizedLinkHref === "") {
+          // Mark as active only if the current URL is exactly the home page
+          if (normalizedCurrentUrl === window.location.origin || normalizedCurrentUrl === "") {
+            link.classList.add("active");
+          }
+        } else if (normalizedCurrentUrl.startsWith(normalizedLinkHref)) {
+          // Mark as active for other links
+          link.classList.add("active");
+        }
+      });
+    });
   </script>
 
 </body>
