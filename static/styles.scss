@@ -269,6 +269,15 @@ table.table-about tr td:first-child {
     text-transform: uppercase;
 }
 
+//=== Changelog styling ===
+ul.changelog li li, ol.changelog li {
+    font-size: 90%;
+    font-family: 'Acumin Pro Condensed';
+}
+.changelog-old{
+    font-size: 90%;
+    font-family: 'Acumin Pro Condensed';
+}
 
 // Details design
 details {
