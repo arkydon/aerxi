@@ -40,3 +40,16 @@
     --color-4: #e83611;
     --color-5: #f9002f;
 }
+
+@media screen and (min-width:900px){
+    :root {
+        --section-padding-inline: 15rem;
+
+    }
+}
+@media screen and (min-width:600px){
+    :root {
+        --section-padding-inline: 5rem;
+
+    }
+}

@@ -306,3 +306,66 @@ details[open] > summary {
     list-style-type: ' - ';
     list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="10" width="8.75" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>');
 }
+
+
+
+@media screen and (min-width:600px){
+    body {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        column-gap: 4rem;
+    }
+    main {
+        min-height: 80vh;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        margin-block-start: 4rem;
+
+        a {
+            color: #49728b;
+        }
+    }
+    .nav-link-divider {
+        display: none;
+    }
+    .hr-1{
+        transform: rotate(90deg);
+        transform-origin: left;  
+        display:none;      
+    }
+    .hr-2{
+        transform: rotate(90deg);
+        transform-origin: right;      
+        display: none;  
+    }
+
+    footer {
+        //grid-column: 1 / 3; MAYBE
+        grid-column: 2 / 2;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: 30rem;
+
+        position: sticky;
+        top: 0;
+    }
+    .header-text {
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1.title-header {
+        margin-block: 0rem;
+        text-align: center;
+    }
+}
