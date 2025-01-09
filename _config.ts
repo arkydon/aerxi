@@ -15,6 +15,7 @@ site.use(slugifyUrls());
 
 site.copy("static/fonts/AcuminPro");
 site.copy("static/favicon.ico");
+site.copy("robots.txt");
 
 site.use(picture());
 site.use(transformImages());
