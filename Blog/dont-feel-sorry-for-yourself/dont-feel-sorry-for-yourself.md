@@ -1,5 +1,6 @@
 ---
 title : Don't feel sorry for yourself
+desc : You should resist self-pity when you're going through a hard time
 date : 2024-03-26
 basename: ""
 category: blog
