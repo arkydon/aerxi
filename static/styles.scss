@@ -270,6 +270,20 @@ table.table-about tr td:first-child {
 }
 
 //=== Changelog styling ===
+dl.changelog dt {
+    font-weight: bold;
+    //color: blueviolet;
+    font-size: 90%;
+}
+dl.changelog dd {
+    font-family: 'Acumin Pro Condensed';
+}
+dl.changelog {
+    /* border-inline-start: 2px solid rgb(26 26 26); */
+    /* padding-inline-start: 15px; */
+    margin-inline-start: 12px;
+}
+
 ul.changelog li li, ol.changelog li {
     font-size: 90%;
     font-family: 'Acumin Pro Condensed';
