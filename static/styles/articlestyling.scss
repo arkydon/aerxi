@@ -11,7 +11,7 @@ table.table-about td {
 table.table-about tr td:first-child {
     /* color: red; */
     font-weight: 500;
-    font-family: 'Acumin Pro Condensed';
+    font-family: var(--font-condensed);
     text-transform: uppercase;
 }
 
@@ -22,7 +22,9 @@ dl.changelog dt {
     font-size: 90%;
 }
 dl.changelog dd {
-    font-family: 'Acumin Pro Condensed';
+    font-family: var(--font-condensed);
+    font-size: 90%;
+    font-variation-settings: "wdth" 35;    
 }
 dl.changelog {
     /* border-inline-start: 2px solid rgb(26 26 26); */
@@ -32,9 +34,11 @@ dl.changelog {
 
 ul.changelog li li, ol.changelog li {
     font-size: 90%;
-    font-family: 'Acumin Pro Condensed';
+    font-family: var(--font-condensed);
+    font-variation-settings: "wdth" 35;
 }
 .changelog-old{
     font-size: 90%;
-    font-family: 'Acumin Pro Condensed';
+    font-family: var(--font-condensed);
+    font-variation-settings: "wdth" 35;
 }
