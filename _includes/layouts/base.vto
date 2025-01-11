@@ -34,27 +34,28 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const links = document.querySelectorAll("nav a");
-      const currentUrl = window.location.href;
-    
-      links.forEach(link => {
-        // Normalize URLs by removing trailing slashes
-        const normalizedLinkHref = link.href.replace(/\/$/, "");
-        const normalizedCurrentUrl = currentUrl.replace(/\/$/, "");
-    
-        // Handle the Home link separately
-        if (normalizedLinkHref === window.location.origin || normalizedLinkHref === "") {
-          // Mark as active only if the current URL is exactly the home page
-          if (normalizedCurrentUrl === window.location.origin || normalizedCurrentUrl === "") {
-            link.classList.add("active");
-          }
-        } else if (normalizedCurrentUrl.startsWith(normalizedLinkHref)) {
-          // Mark as active for other links
-          link.classList.add("active");
+    const links = document.querySelectorAll("nav a");
+    const currentUrl = window.location.href;
+    const currentUrlPath = window.location.pathname; // Extract pathname for faster comparisons
+
+    links.forEach(link => {
+        const linkHref = link.href; 
+        const linkPath = link.pathname; // Extract pathname for faster comparisons
+
+        // Handle the Home link efficiently
+        if (linkPath === "/" || linkPath === "") {
+        link.classList.toggle("active", currentUrlPath === "/" || currentUrlPath === ""); 
+        return; // Exit the loop for home link
         }
-      });
+
+        // Check if current URL starts with the link's href
+        link.classList.toggle("active", currentUrl.startsWith(linkHref)); 
     });
-  </script>
+    });
+</script>
+
+<!-- 100% privacy-first analytics -->
+<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 
 </body>
 </html>
