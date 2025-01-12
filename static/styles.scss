@@ -6,14 +6,19 @@
 @use "./styles/variables.scss";
 @use "./styles/articlestyling.scss";
 
+/*@mixin font($stretch: normal) {
+    font-family: "Roboto Flex Regular", Arial, sans-serif;
+    font-stretch: $stretch;
+}*/
+
 body {
     display: flex; // Without this, there will be a space between Nav and main
     flex-direction: column;
 
     font-family: var(--font-main);
     font-size: var(--main-font-size);
-    //font-stretch: semi-condensed;
-    font-variation-settings: "wdth" 90;
+    //font-variation-settings: "wdth" 90;
+    font-stretch: semi-condensed;
     line-height: 1.5;
     max-width: 40em;
 
@@ -27,11 +32,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-condensed);
+    //font: var(--font-condensed);
     font-weight: 500;
     margin-block: 1rem;
     color: var(--main-color);
-    font-variation-settings: "wdth" 35; //font-stretch: ultra-condensed;
+    font-stretch: ultra-condensed;
+    //font-variation-settings: "wdth" 35; //font-stretch: ultra-condensed;
 }
 
 a {
@@ -69,10 +75,8 @@ header {
 nav {
     a {
         text-decoration: none; // remove underline on nav items
-        font-family: var(--font-condensed);
-        //font-stretch: ultra-condensed;
-        //font-size: 105%;
-        font-variation-settings: "wdth" 35;
+        font-stretch: ultra-condensed;
+        //font-variation-settings: "wdth" 35;
     }
     a.active {
         font-weight: bold;
@@ -96,7 +100,7 @@ h1.title-header {
 
     text-transform: uppercase;
     text-decoration: none;
-    font-family: var(--font-condensed);
+    font-stretch: ultra-condensed;
     font-weight: 400;
     background: linear-gradient(219deg, var(--color-1) 19%, transparent 19%, transparent 20%, var(--color-2) 20%, var(--color-2) 39%, transparent 39%, transparent 40%, var(--color-3) 40%, var(--color-3) 59%, transparent 59%, transparent 60%, var(--color-4) 60%, var(--color-4) 79%, transparent 79%, transparent 80%, var(--color-5) 80%);
     background-clip: text;
@@ -138,8 +142,9 @@ blockquote {
     background: #f3f3f3;
     margin-inline: 0;
     border-radius: 5px;
-    font-family: var(--font-condensed);
-    font-variation-settings: "wdth" 40;
+    font-stretch: extra-condensed;
+    //font-family: var(--font-condensed);
+    //font-variation-settings: "wdth" 40;
 
     p {
         margin: 0;

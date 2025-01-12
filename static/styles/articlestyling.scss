@@ -11,20 +11,20 @@ table.table-about td {
 table.table-about tr td:first-child {
     /* color: red; */
     font-weight: 500;
-    font-family: var(--font-condensed);
+    //font-family: var(--font-condensed);
     text-transform: uppercase;
 }
 
 //=== Changelog styling ===
 dl.changelog dt {
     font-weight: bold;
-    //color: blueviolet;
     font-size: 90%;
 }
 dl.changelog dd {
-    font-family: var(--font-condensed);
+    //font-family: var(--font-condensed);
     font-size: 90%;
-    font-variation-settings: "wdth" 35;   
+    //font-variation-settings: "wdth" 35;   
+    font-stretch: ultra-condensed;
     margin-block: 0.1rem; 
 }
 dl.changelog {
@@ -35,11 +35,13 @@ dl.changelog {
 
 ul.changelog li li, ol.changelog li {
     font-size: 90%;
-    font-family: var(--font-condensed);
-    font-variation-settings: "wdth" 35;
+    font-stretch: ultra-condensed;
+   // font-family: var(--font-condensed);
+    //font-variation-settings: "wdth" 35;
 }
 .changelog-old{
     font-size: 90%;
-    font-family: var(--font-condensed);
-    font-variation-settings: "wdth" 35;
+    font-stretch: ultra-condensed;
+    //font-family: var(--font-condensed);
+    //font-variation-settings: "wdth" 35;
 }
