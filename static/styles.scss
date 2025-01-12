@@ -359,3 +359,12 @@ details[open] > summary {
         text-align: center;
     }
 }
+
+// === Testing spacing ===
+h1, h2, h3, h4, h5 {
+    margin-block: 0.3rem;
+}
+
+ul {
+    margin-block-start: 0.5rem;
+}
