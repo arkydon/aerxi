@@ -20,10 +20,9 @@ templateEngine: [vto, md]
 <div class="home-blog-list">
   <h2> Latest Blog Posts </h2>
   <ul>
-    {{ for page of search.pages("category=blog", "date=desc") }}
-    <li> <a href={{page.url}}> {{ page.title }} </a>
-    <time class="blog-list-date">{{page.date |> date('HUMAN_DATE')}}</time>
-  </li>
-    {{ /for }}
+    {{- for page of search.pages("blog", "date=desc", 4) -}}
+    <li><a href={{page.url}}> {{ page.title }} </a> 
+         <time class="blog-list-date">{{page.date |> date('HUMAN_DATE')}}</time></li>
+    {{- /for -}}
   </ul>
 </div>
