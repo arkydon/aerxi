@@ -1,5 +1,5 @@
 ---
-title : Useful websites around the web
+title : Cool websites
 date : [2021-08-11]
 
 tags :
