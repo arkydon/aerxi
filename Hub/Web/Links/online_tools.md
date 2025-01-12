@@ -58,5 +58,6 @@ It can display how many hours of sun or shadow a specific location gets over the
 - Page speed :
 	- [Pingdom](https://tools.pingdom.com/) - Enter a URL to test the page load time, analyze it, and find bottlenecks.
 	- [Google Page Speed Insights](https://pagespeed.web.dev/)
-	- [https://yellowlab.tools/](https://yellowlab.tools/)
+	- [Yellow Lab tools/](https://yellowlab.tools/)
+    - [DebugBear](https://www.debugbear.com/test/website-speed/)
 - [SVG to CSS Converter](https://www.svgbackgrounds.com/tools/svg-to-css/)
