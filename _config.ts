@@ -8,6 +8,9 @@ import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import date from "lume/plugins/date.ts";
 import googleFonts from "lume/plugins/google_fonts.ts";
 
+import toc from "npm:markdown-it-table-of-contents";
+import tocAnchor from "npm:markdown-it-anchor";
+
 const site = lume({location: new URL("https://arky.pages.dev"),});
 
 site.use(sass());
@@ -26,6 +29,8 @@ site.use(svgo());
 
 site.use(date(/* Options */));
 
+site.hooks.addMarkdownItPlugin(tocAnchor.default, { level: 4 });
+site.hooks.addMarkdownItPlugin(toc, { includeLevel: [2, 3, 4], listType : "ol"});
 
 /*
 site.use(googleFonts({
