@@ -185,7 +185,13 @@ li::marker {
     color: var(--main-color);
 }
 
-
+ol {
+    padding-inline-start: 1.5em;
+    
+    li {
+        padding-inline-start: 0.19rem;
+    }    
+}
 //===============
 .home-blog-list ul, .blog-list ul{
     margin: 0;

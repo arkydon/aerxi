@@ -29,7 +29,7 @@ site.use(svgo());
 
 site.use(date(/* Options */));
 
-site.hooks.addMarkdownItPlugin(tocAnchor.default, { level: 4 });
+site.hooks.addMarkdownItPlugin(tocAnchor.default, { level: [1,2,3,4] });
 site.hooks.addMarkdownItPlugin(toc, { includeLevel: [2, 3, 4], listType : "ol"});
 
 /*
