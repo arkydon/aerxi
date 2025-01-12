@@ -2,7 +2,6 @@
 title : How and why I made this website
 date : 2024-06-07
 basename: ""
-category: blog
 tags : 
     - blog
 
