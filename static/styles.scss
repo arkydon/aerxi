@@ -176,7 +176,7 @@ hr {
         var(--col-8) 350px, var(--col-8) 400px
       );    
     
-      background-size: 400px 100%; /* Match gradient width to total range */
+    background-size: 400px 100%; /* Match gradient width to total range */
     background-repeat: repeat-x; /* Ensure horizontal repetition */
 }
 
