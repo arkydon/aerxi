@@ -38,7 +38,21 @@ body {
     //background-color: #fff5ea;
     //color: #3f3f3f;
 }
+body.light-mode {
+    background-color: inherit;
+    color: inherit;
+}
+body.dark-mode {
+    font-variation-settings: "GRAD" 80, "wght" 300;
+    background-color: #272727;
+	color: #f6dacd;	
+	--main-color: rgb(224 131 108);
+}
 
+body.dark-mode blockquote {
+    background: #313131;
+    color: #cacaca;
+}
 h1, h2, h3, h4, h5, h6 {
     //font: var(--font-condensed);
     font-weight: 500;
@@ -323,6 +337,9 @@ details[open] > summary {
         a {
             color: #49728b;
         }
+    }
+    body.dark-mode nav a {
+        color: var(--main-color);
     }
     .nav-link-divider {
         display: none;
