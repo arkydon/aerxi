@@ -32,6 +32,11 @@ body {
 
     //font-variation-settings: "wght" 430;
     font-variation-settings: "GRAD" 20;
+
+    // Possible new theme
+    //font-variation-settings: "GRAD" 40;
+    //background-color: #fff5ea;
+    //color: #3f3f3f;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -160,17 +165,18 @@ hr {
     border: none; /* Remove default border */
     height: 4px; /* Set the thickness of the line */
     background-image: repeating-linear-gradient(
-      to right,
-      #c4e17f 0, #c4e17f 50px,
-      #81c7af 50px, #81c7af 100px,
-      #fad071 100px, #fad071 150px,
-      #f0766b 150px, #f0766b 200px,
-      #db9dbe 200px, #db9dbe 250px,
-      #c49cdf 250px, #c49cdf 300px,
-      #6599e2 300px, #6599e2 350px,
-      #61c2e4 350px, #61c2e4 400px
-    );
-    background-size: 400px 100%; /* Match gradient width to total range */
+        to right,
+        var(--col-1) 0, var(--col-1) 50px,
+        var(--col-2) 50px, var(--col-2) 100px,
+        var(--col-3) 100px, var(--col-3) 150px,
+        var(--col-4) 150px, var(--col-4) 200px,
+        var(--col-5) 200px, var(--col-5) 250px,
+        var(--col-6) 250px, var(--col-6) 300px,
+        var(--col-7) 300px, var(--col-7) 350px,
+        var(--col-8) 350px, var(--col-8) 400px
+      );    
+    
+      background-size: 400px 100%; /* Match gradient width to total range */
     background-repeat: repeat-x; /* Ensure horizontal repetition */
 }
 
