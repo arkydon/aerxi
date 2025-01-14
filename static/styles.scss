@@ -43,11 +43,26 @@ body.light-mode {
     color: inherit;
 }
 body.dark-mode {
-    font-variation-settings: "GRAD" 80, "wght" 300;
+    //font-variation-settings: "GRAD" 80, "wght" 300;
+    font-variation-settings: "GRAD" 80, "wght" 260;
     background-color: #272727;
-	color: #f6dacd;	
-	--main-color: rgb(224 131 108);
+    color: #f6dacd;
+
+    --main-color: rgb(255 115 115);
+
+    // hr colors
+    --col-1: #87ac2f;
+    --col-2: #4bc89d;
+    --col-3: #fec647;
+    --col-4: #ee4f40;
+    --col-5: #d85d9e;
+    --col-6: #9c4cd2;
+    --col-7: #2f74d4;
+    --col-8: #31aeda;
+    background-color: #2d2d2d;
+    color: #e9e9e9;
 }
+
 
 body.dark-mode blockquote {
     background: #313131;
@@ -111,6 +126,8 @@ span.nav-link-divider {
 
 h1.title-header {
     margin-block: 0rem;
+    font-variation-settings: "wdth" 60, "wght" 400;
+
 }
 // ---- Style header title to be coloured and clipped ---
 .title-header a {
@@ -122,8 +139,8 @@ h1.title-header {
 
     text-transform: uppercase;
     text-decoration: none;
-    font-stretch: ultra-condensed;
-    font-weight: 400;
+    //font-stretch: ultra-condensed;
+    //font-weight: 400;
     background: linear-gradient(219deg, var(--color-1) 19%, transparent 19%, transparent 20%, var(--color-2) 20%, var(--color-2) 39%, transparent 39%, transparent 40%, var(--color-3) 40%, var(--color-3) 59%, transparent 59%, transparent 60%, var(--color-4) 60%, var(--color-4) 79%, transparent 79%, transparent 80%, var(--color-5) 80%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -193,7 +210,6 @@ hr {
     background-size: 400px 100%; /* Match gradient width to total range */
     background-repeat: repeat-x; /* Ensure horizontal repetition */
 }
-
 
 ul {
     //margin: 0;
@@ -276,6 +292,9 @@ footer {
     p {
         margin-block-start: 2rem;
     }
+    svg {
+        stroke: var(--main-color);
+    }
 }
 
 // ==== Details design ======
@@ -291,9 +310,8 @@ details {
 }
   
 summary {
-    font-weight: bold;
-    /* margin: -.5em -.5em 0; */
-    /* padding: .5em; */
+    //font-weight: bold;
+    font-variation-settings: "wght" 600;
 }
   
 details[open] {
