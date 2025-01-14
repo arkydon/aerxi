@@ -399,7 +399,8 @@ details[open] > summary {
         margin-block-start: 2rem;
     }
     h1.title-header {
-        //margin-block: 0rem;
+        margin-block: 0rem;
+        font-variation-settings: "wdth" 90, "GRAD" 90;        
         text-align: center;
     }
 }

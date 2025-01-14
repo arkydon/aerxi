@@ -46,16 +46,16 @@
 
 }
 
-@media screen and (min-width:900px){
-    :root {
-        --section-padding-inline: 15rem;
-        --section-padding-block: 0;
-
-    }
-}
 @media screen and (min-width:600px){
     :root {
         --section-padding-inline: 5rem;
         --section-padding-block: 0;
+    }
+}
+@media screen and (min-width:900px){
+    :root {
+        --section-padding-inline: 10rem;
+        --section-padding-block: 0;
+
     }
 }
