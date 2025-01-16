@@ -20,6 +20,7 @@ site.use(slugifyUrls());
 /*site.copy("static/fonts/AcuminPro");*/
 site.copy("static/fonts/RobotoFlex");
 site.copy("static/favicon.ico");
+site.copy("static/og.jpg");
 site.copy("robots.txt");
 
 site.use(picture());

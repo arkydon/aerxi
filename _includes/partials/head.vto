@@ -10,15 +10,16 @@
 
     <meta property="og:title" content="Arky's Digital Space">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="/static/og.jpg">	  
 
     {{ if desc }}
         <meta name="description" content="{{ desc }}"/>
         <meta property="og:description" content="{{ desc }}"/>
         <meta property="twitter:description" content="{{ desc }}"/>
     {{ else }}
-        <meta name="description" content=title/>
-        <meta property="og:description" content=title/>
-        <meta property="twitter:description" content=title/>
+        <meta name="description" content="{{title}}"/>
+        <meta property="og:description" content="{{title}}"/>
+        <meta property="twitter:description" content="{{title}}"/>
     {{ /if }}
 
     <!-- <link rel="preload" href="/static/styles.css" as="style"/>
