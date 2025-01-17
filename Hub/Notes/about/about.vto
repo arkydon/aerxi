@@ -11,7 +11,7 @@ templateEngine: [vto, md]
 ---
 
 ||||
-|---|---|---|
+|-|-|-|
 |Name|:|Arky|
 |Location|:|Shillong|
 |DoB|:|22.12.1990|
@@ -30,7 +30,8 @@ templateEngine: [vto, md]
 
    * Cool *rocks* 🪨
 
-    * *Organising* things` },
+   * *Organising* objects` 
+    },
   { summ: "Dislikes", 
     text: `
    * Getting wet in the rain.
@@ -43,7 +44,23 @@ templateEngine: [vto, md]
   {{comp.details({summ: details.summ, text:details.text})}}
 {{ /for }}
 
+
 ### Favourites
+
+{{for fav of favourites}}
+    <details>
+        <summary> {{fav.title}} </summary>
+        <ul>
+        {{for d of fav.data}}
+            <li>{{d}}</li>           
+        {{/for}}
+        <ul/>
+    </details>
+
+{{/for}}
+
+
+{{#
 
 {{set detailsData = [
 {summ:"Games", text: `
@@ -114,3 +131,5 @@ templateEngine: [vto, md]
 {{ for details of detailsData }}
   {{comp.details({summ: details.summ, text:details.text})}}
 {{ /for }}
+
+#}}

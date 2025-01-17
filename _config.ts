@@ -11,6 +11,8 @@ import googleFonts from "lume/plugins/google_fonts.ts";
 import toc from "npm:markdown-it-table-of-contents";
 import tocAnchor from "npm:markdown-it-anchor";
 
+import sheets from "lume/plugins/sheets.ts";
+
 const site = lume({location: new URL("https://arky.pages.dev"),});
 
 site.use(sass());
@@ -29,6 +31,8 @@ site.use(transformImages());
 site.use(svgo());
 
 site.use(date(/* Options */));
+
+site.use(sheets());
 
 site.hooks.addMarkdownItPlugin(tocAnchor.default, { level: [1,2,3,4] });
 site.hooks.addMarkdownItPlugin(toc, { includeLevel: [2, 3, 4], listType : "ol"});
