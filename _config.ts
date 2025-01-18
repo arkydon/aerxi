@@ -19,20 +19,17 @@ site.use(sass());
 
 site.use(slugifyUrls());
 
-/*site.copy("static/fonts/AcuminPro");*/
-site.copy("static/fonts/RobotoFlex");
-site.copy("static/favicon.ico");
-site.copy("static/og.jpg");
-site.copy("robots.txt");
+site.copy("static/fonts/RobotoFlex")
+    .copy("static/favicon.ico")
+    .copy("static/og.jpg")
+    .copy("robots.txt");
 
-site.use(picture());
-site.use(transformImages());
+site.use(picture())
+    .use(transformImages())
 
-site.use(svgo());
-
-site.use(date(/* Options */));
-
-site.use(sheets());
+    .use(svgo())
+    .use(date())
+    .use(sheets());
 
 site.hooks.addMarkdownItPlugin(tocAnchor.default, { level: [1,2,3,4] });
 site.hooks.addMarkdownItPlugin(toc, { includeLevel: [2, 3, 4], listType : "ol"});
