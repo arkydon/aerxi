@@ -354,6 +354,7 @@ details[open] > summary {
 
         a {
             color: #49728b;
+            margin-block: 0.2rem;
         }
     }
     body.dark-mode nav a {
@@ -384,7 +385,7 @@ details[open] > summary {
         flex-direction: column;
         justify-content: center;
 
-        height: 35rem;
+        height: 30.9rem;
 
         position: sticky;
         top: 0;
