@@ -312,6 +312,7 @@ details {
 summary {
     //font-weight: bold;
     font-variation-settings: "wght" 600;
+    //margin-block: 0.1rem;
 }
   
 details[open] {
@@ -319,8 +320,9 @@ details[open] {
 }
   
 details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 0.5em;
+    border-bottom: 1px dashed darkgrey;
+    padding-block-end: 0.5rem;
+    //margin-block: 0.5rem;
 }
   
 details > summary {
