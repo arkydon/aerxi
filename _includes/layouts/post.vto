@@ -4,7 +4,9 @@ layout: layouts/base.vto
 <div class="blog-post">
     <article>
         <h2>{{title}}</h2>
-        <time class="blog-post-date">{{date |> date('PPP')}}</time>
+        {{if date}}
+            <time class="blog-post-date">{{date |> date('PPP')}}</time>
+        {{/if}}
         {{content}}
     </article>
 </div>
