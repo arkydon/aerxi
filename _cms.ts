@@ -81,7 +81,10 @@ cms.collection({
             name: "data",
             type: "list",
         }
-]});
+    ],
+    documentName: "{title}.yaml",
+
+});
 
 cms.upload(
     "uploads: Uploaded files",
