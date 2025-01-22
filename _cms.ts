@@ -12,8 +12,6 @@ const cms = lumeCMS({
     `,
 });
 
-
-
 cms.collection({
     name:"Blog", 
     store: "src:blog/**/*.{md, vto}",

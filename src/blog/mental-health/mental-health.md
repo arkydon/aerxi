@@ -1,7 +1,6 @@
 ---
 title : My mental health
 date : 2024-01-01
-basename: ""
 tags : 
     - blog
     
