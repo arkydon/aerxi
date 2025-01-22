@@ -6,7 +6,7 @@ tags :
     
 layout : layouts/post.vto
 
-og_description : "My mental health"
+desc : "My mental health"
 ---
 *This is a more refined blog article about my mental health that I wrote and shared last year.*
 

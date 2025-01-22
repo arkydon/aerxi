@@ -6,7 +6,7 @@ tags :
 
 layout : layouts/post.vto
 
-og_description : "How to make the mute feature better"
+desc : "How to make the mute feature better"
 ---
 
 Some social media platforms have a feature to filter out posts that contain certain keywords. Here are some of the ways I think they can improve it:

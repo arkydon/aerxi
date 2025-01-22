@@ -6,7 +6,7 @@ tags :
 
 layout: layouts/post.vto
 
-og_description : "Writing garbage everyday"
+desc : "Writing garbage everyday"
 ---
 
 ![An image](trash.png){.blog-graphic} Reading people's blogs, of all kinds, on the internet has inspired me to build my own digital space and put my own thougths on it. I have a lot of ideas in my head about different kinds of things I want to document and opinions I want to jot down, but whenever I actually start to write, I can't seem to find the right words and sentences to express what I'm thinking. I'm not a writer and I've also always had a problem trying to convert my thoughts into words which was really frustrating.

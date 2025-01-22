@@ -37,7 +37,7 @@ cms.collection({
             /* init(field) {field.value = "layouts/post.vto";} */
 ,        },
         {
-            name: "og_description",
+            name: "desc",
             label: "Open Graph Description",
             type: "text",
         },
@@ -76,7 +76,7 @@ cms.collection({
             value: "layouts/post.vto"
 ,        },
         {
-            name: "og_description",
+            name: "desc",
             label: "Open Graph Description",
             type: "text",
         },
@@ -115,7 +115,7 @@ cms.collection({
             value: "layouts/post.vto"
 ,        },
         {
-            name: "og_description",
+            name: "desc",
             label: "Open Graph Description",
             type: "text",
         },
@@ -154,7 +154,7 @@ cms.collection({
             value: "layouts/post.vto"
 ,        },
         {
-            name: "og_description",
+            name: "desc",
             label: "Open Graph Description",
             type: "text",
         },
