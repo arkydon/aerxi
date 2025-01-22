@@ -6,6 +6,7 @@ const cms = lumeCMS({
   <style>
     body {
       font-family: "Barlow Condensed";
+      font-size: 20px;
     }
   </style>
     `,
