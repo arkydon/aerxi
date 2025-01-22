@@ -13,11 +13,17 @@ import tocAnchor from "npm:markdown-it-anchor";
 
 import sheets from "lume/plugins/sheets.ts";
 
-const site = lume({location: new URL("https://arky.pages.dev"),});
+const site = lume({
+    location: new URL("https://arky.pages.dev"),
+    src: "./src",
+    dest: "./_output", 
+});
 
 site.use(sass());
 
 site.use(slugifyUrls());
+
+site.copy("./content", "blog");
 
 site.copy("static/fonts/RobotoFlex")
     .copy("static/favicon.ico")

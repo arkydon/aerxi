@@ -15,7 +15,7 @@ const cms = lumeCMS({
 
 cms.collection({
     name:"Blog", 
-    store: "src:blog/**/*.md",
+    store: "src:blog/**/*.{md, vto}",
     fields: [
         "title: text",
         {
@@ -50,28 +50,140 @@ cms.collection({
     ],
     documentName: "{title}.md",
 });
-cms.collection("Hub", "src:hub/**/*.md", [
-    "title: text",
-    "date: date",
-    "tags: list",
+
+cms.collection({
+    name:"Software", 
+    store: "src:software/**/*.{md, vto}",
+    fields: [
+        "title: text",
+        {
+            name: "date",
+            type: "date",
+            init(field) {
+                field.value = new Date();
+            }
+        },
+        {
+            name: "tags",
+            label: "Tags",
+            type: "list",
+            options: ["android","windows"],
+            multiple: true,
+            value: ["hub"]
+        },
+        {   
+            name: "layout", 
+            type: "hidden", 
+            value: "layouts/post.vto"
+,        },
+        {
+            name: "og_description",
+            label: "Open Graph Description",
+            type: "text",
+        },
+        {
+            name: "content",
+            label: "Blog Post Content",
+            type: "markdown"
+        },
+    ],
+    documentName: "{title}.md",
+});
+
+cms.collection({
+    name:"Media", 
+    store: "src:media/**/*.{md,vto}",
+    fields: [
+        "title: text",
+        {
+            name: "date",
+            type: "date",
+            init(field) {
+                field.value = new Date();
+            }
+        },
+        {
+            name: "tags",
+            label: "Tags",
+            type: "list",
+            options: ["music","photos"],
+            multiple: true,
+            value: ["hub"]
+        },
+        {   
+            name: "layout", 
+            type: "hidden", 
+            value: "layouts/post.vto"
+,        },
+        {
+            name: "og_description",
+            label: "Open Graph Description",
+            type: "text",
+        },
+        {
+            name: "content",
+            label: "Blog Post Content",
+            type: "markdown"
+        },
+    ],
+    documentName: "{title}.md",
+});
+
+cms.collection({
+    name:"Web > Links", 
+    store: "src:web/links/**/*.{md,vto}",
+    fields: [
+        "title: text",
+        {
+            name: "date",
+            type: "date",
+            init(field) {
+                field.value = new Date();
+            }
+        },
+        {
+            name: "tags",
+            label: "Tags",
+            type: "list",
+            options: ["links"],
+            multiple: true,
+            value: ["hub"]
+        },
+        {   
+            name: "layout", 
+            type: "hidden", 
+            value: "layouts/post.vto"
+,        },
+        {
+            name: "og_description",
+            label: "Open Graph Description",
+            type: "text",
+        },
+        {
+            name: "content",
+            label: "Blog Post Content",
+            type: "markdown"
+        },
+    ],
+    documentName: "{title}.md",
+});
+
+
+cms.document("Changelog", "src:notes/changelog/index.vto", [
     "content: markdown",
 ]);
 
-cms.document("Changelog", "src:hub/notes/changelog/index.vto", [
+cms.document("Now", "src:notes/now/index.md", [
     "content: markdown",
 ]);
 
-cms.document("Now", "src:hub/notes/now/index.md", [
-    "content: markdown",
-]);
-
-cms.document("Blogroll", "src:hub/web/blogroll/blog-roll.vto", [
+cms.document("Blogroll", "src:web/blogroll/blog-roll.vto", [
     "content: markdown",
 ]);
 
 cms.collection({ 
     name: "Favourites", 
-    store: "src:hub/notes/about/_data/favourites/*.yaml", 
+    store: "src:notes/about/_data/favourites/*.yaml", 
     fields: [
         {
             name: "title",
