@@ -48,6 +48,9 @@ It can display how many hours of sun or shadow a specific location gets over the
 - [Squoosh](https://squoosh.app/) : Quickly compress images.
 - [Profile Pic Maker](https://pfpmaker.com/) : Create better looking profile pic backgrounds
 
+#### Fonts
+- [Wakamai Fondue](https://wakamaifondue.com/) - Find out what your font can do. Generate css for your font files
+
 ### Privacy and Security
 - [VirusTotal](https://www.virustotal.com/gui/home/upload) - Upload a file and scan for viruses. Uses multiple antivirus engines. Supports android apps.
 - [Exodus](https://reports.exodus-privacy.eu.org/en/reports/) - Analyse android apps.
