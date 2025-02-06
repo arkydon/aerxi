@@ -79,8 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    text-decoration: 2px underline dashed var(--main-color);
-    text-underline-offset: 4px;
+    text-decoration: 2px underline dashed rgb(99, 131, 189);//rgb(63 154 207);//var(--main-color);
+    text-underline-offset: 6px;
     /* color: #3F51B5; */
     color: inherit;
 }
@@ -210,6 +210,11 @@ hr {
     background-size: 400px 100%; /* Match gradient width to total range */
     background-repeat: repeat-x; /* Ensure horizontal repetition */
 }
+hr.line {
+    background: none;
+    border: 0.5px solid #a0a0a0;
+    height: initial;
+}
 
 ul {
     //margin: 0;
@@ -253,7 +258,7 @@ time.blog-list-date{
     font-size: 70%;
     color: grey;
     display: block;
-    margin-block-start: 0rem;
+    margin-block-start: 0.5rem;
 }
 
 .home-blog-list ul li, .blog-list ul li{

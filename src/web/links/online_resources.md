@@ -20,8 +20,11 @@ layout: layouts/post.vto
 - [Undraw](https://undraw.co/) : Free illustrations for website/ 
 	app/presentation/social,etc
 - [Stockcake](https://stockcake.com/) : AI generated stock images.
+
+### Icons
 - [Flaticon](https://www.flaticon.com/) - Free png icons.
-- [Hero Icons](https://heroicons.com/) - Free SVG icons.
+- [Hero Icons](https://heroicons.com/) - Free svg icons.
+- [Lucide](https://lucide.dev) - Lightweight, scalable, customizable svg icons
 
 ### Backgrounds
 - [Hero Patterns](https://heropatterns.com/) - Generate pattern backgrounds

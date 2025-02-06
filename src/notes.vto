@@ -6,11 +6,16 @@ url: /notes/
 
 # Notes
 
-> [About](/notes/about/) A little about me and the things I like and don't like.{.notes-about}
+<hr class="line">
 
-> [Now](/notes/now/) Some things I am and was busy with.{.notes-now}
+[About](/notes/about/) A little about me and the things I like and don't like.{.notes-about}
+<hr class="line">
 
-> [Changelog](/notes/changes) A list of changes made to the website.{.notes-changelog}
+[Now](/notes/now/) Some things I am and was busy with.{.notes-now}
+<hr class="line">
+
+[Changelog](/notes/changes) A list of changes made to the website.{.notes-changelog}
+
 
 
 <style scoped>
@@ -37,9 +42,10 @@ url: /notes/
         font-size: large;
         background-position: 0.5rem;
     }
-    blockquote {
+    /*blockquote {
         font-size: inherit;
-    }
+        background-color: initial;
+    }*/
 </style>
 {{# {{ comp.hublist({text: title, hubtag: "notes"}) }} #}}
 
