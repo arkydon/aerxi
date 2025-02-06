@@ -1,10 +1,10 @@
 :root {
     --main-font-size: 20px;
-    --font-main: "Roboto Flex Regular", "Arial", "Acumin Pro SemiCondensed";
-    //--font: condensed 20px "Roboto Flex Regular", "Arial", "Acumin Pro Condensed";
+    --font-main: "Roboto Flex Regular", "Arial", "Acumin Pro SemiCondensed";    //--font: condensed 20px "Roboto Flex Regular", "Arial", "Acumin Pro Condensed";
     --section-padding-inline: 1.5rem;
     --section-padding-block: 1rem;
     --main-color:rgb(207 63 63);
+    --link-color: rgb(99, 131, 189);    //#5480d0;//#d05454;
 
     // Multi coloured nav header title
     --color-1: #186cb8;
@@ -14,27 +14,6 @@
     --color-5: #f9002f;
 
     // Multi coloured nav hr
-    /*
-    --col-1: #c4e17f;
-    --col-2: #81c7af;
-    --col-3: #fad071;
-    --col-4: #f0766b;
-    --col-5: #db9dbe;
-    --col-6: #c49cdf;
-    --col-7: #6599e2;
-    --col-8: #61c2e4; 
-    */
-    /*
-    --col-1: #f49191;
-    --col-2: #ffba60;
-    --col-3: #f8e975;
-    --col-4: #a3dca3;
-    --col-5: #cafe84;
-    --col-6: #bac6dc;
-    --col-8: #d27cd2;
-    --col-7: #9d9fec;
-    */
-    //copilot generated hr multi colours
     --col-1: rgba(255, 99, 71, 1);      // Tomato red
     --col-2: rgba(255, 178, 62, 1);     // Light orange
     --col-3: rgba(255, 215, 89, 1);     // Sunflower yellow

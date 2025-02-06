@@ -49,7 +49,8 @@ body.dark-mode {
     color: #f6dacd;
 
     --main-color: rgb(255 115 115);
-
+    --link-color: lightblue;
+    
     // hr colors
     --col-1: #87ac2f;
     --col-2: #4bc89d;
@@ -79,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
-    text-decoration: 2px underline dashed rgb(99, 131, 189);//rgb(63 154 207);//var(--main-color);
+    text-decoration: 2px underline dashed var(--link-color);
     text-underline-offset: 6px;
     /* color: #3F51B5; */
     color: inherit;
