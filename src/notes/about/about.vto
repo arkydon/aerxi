@@ -51,9 +51,9 @@ templateEngine: [vto, md]
     <details>
         <summary> {{fav.title}} </summary>
         <ul>
-        {{for d of fav.data}}
+        {{- for d of fav.data -}}
             <li>{{d}}</li>           
-        {{/for}}
+        {{- /for -}}
         <ul/>
     </details>
 
