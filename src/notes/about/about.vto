@@ -5,15 +5,15 @@ tags :
     - hub
     - notes
 	
-layout: layouts/post.vto
+layout: layouts/base.vto
 
 templateEngine: [vto, md]
 ---
 
 ||||
 |-|-|-|
-|Name|:|Arky|
-|Location|:|Shillong|
+|My name|:|Arky|
+|Where I live|:|Shillong|
 |DoB|:|22.12.1990|
 
 {.table-about}
@@ -47,16 +47,11 @@ templateEngine: [vto, md]
 
 ### Favourites
 
-{{for fav of favourites}}
+{{for fav of favourites -}}
     <details>
-        <summary> {{fav.title}} </summary>
-        <ul>
-        {{- for d of fav.data -}}
-            <li>{{d}}</li>           
-        {{- /for -}}
-        <ul/>
+        <summary>{{fav.title}}</summary>
+        <ul>{{- for d of fav.data -}}<li>{{d}}</li>{{/for}}<ul/>
     </details>
-
 {{/for}}
 
 

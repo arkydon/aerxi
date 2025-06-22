@@ -20,20 +20,28 @@ const site = lume({
 });
 
 site.use(sass());
+site.add("static/styles.scss");
 
 site.use(slugifyUrls());
 
-site.copy("./content", "blog");
+//site.copy("./content", "blog");
+
+//Copy all the images from these folders and not just the md
+site.add("blog")
+    .add("media")
+    .add("notes")
+    .add("software")
+    .add("web");
 
 site.copy("static/fonts/RobotoFlex")
     .copy("static/favicon.ico")
     .copy("static/og.jpg")
     .copy("robots.txt");
 
-site.use(picture())
-    .use(transformImages())
+//site.use(picture())
+//    .use(transformImages())
 
-    .use(svgo())
+site.use(svgo())
     .use(date())
     .use(sheets());
 

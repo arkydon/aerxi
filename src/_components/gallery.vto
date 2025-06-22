@@ -33,7 +33,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     const lightbox = document.createElement('div');
     lightbox.className = 'lightbox';
-    lightbox.innerHTML = '<img src="" alt="Lightbox Image" /><span onclick="closeLightbox()" style="position: absolute; bottom: 120px; right: 20px; color: white; font-size: 30px; cursor: pointer;">&times;</span>';
+    lightbox.innerHTML = '<img src="" alt="Lightbox Image" /><span onclick="closeLightbox()" style="position: absolute; bottom: 100px; right: 50%; color: white; font-size: 30px; cursor: pointer;">&times;</span>';
     document.body.appendChild(lightbox);
   });
   
@@ -84,8 +84,9 @@
   .lightbox img {
     max-width: 90%;
     max-height: 90%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  }
+    box-shadow: 0 0 14px rgb(101 92 92 / 82%);
+    border-radius: 5px;  
+    }
     
   .lightbox.active {
     display: flex;

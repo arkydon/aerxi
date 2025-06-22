@@ -1,5 +1,5 @@
 ---
-title : Articles that will inspire you to write a blog or make your own website
+title : Articles that will inspire you to make a blog or personal website
 date : [2024-12-21]
 tags :
     - hub   
