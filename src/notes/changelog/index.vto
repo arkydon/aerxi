@@ -12,6 +12,9 @@ layout: layouts/post.vto
 > **2025 NOTE** : I have remade this site again from scratch using a different static site engine called **lume** : [🔗lume.land](https://lume.land)
 
 ### Changelog
+Jun 23, 2025:
+: Tweaked website design
+: Tweaked lightbox gallery code
 
 Jun 22, 2025:
 : Changed website design
@@ -49,12 +52,13 @@ Feb 6, 2025:
 
 ### Todo
 
-1. Style dark mode
+1. ~~Style dark mode~~
 2. Add like button to blog pages
 3. ~~Show an indicator for visited links~~
 4. Add a widget or dashboard to homepage
-5. Replace Cloudflare Analytics with something else.
+5. ~~Replace Cloudflare Analytics with something else.~~
 6. ~~Switch to another SSG that is more popular because it will be much easier to find out how to implement something.~~
+7. Tweak header design
 
 {.changelog}
 
@@ -89,12 +93,62 @@ Feb 6, 2025:
 
 **Todo**
 
-1. Fix dark mode
+1. ~~Fix dark mode~~
 2. Add like button to blog pages
 3. Show an indicator for visited links
 4. Add a widget or dashboard to homepage
 5. ~~Rename “Garden” to something better~~
-6. Replace Cloudflare Analytics with something else.
-7. Switch to another SSG that is more popular because it will be much easier to find out how to implement something.
+6. ~~Replace Cloudflare Analytics with something else.~~
+7. Switch to another SSG.
 
 {.changelog-old}
+
+
+<style scoped>
+
+    /*=== Changelog styling ===*/
+    dl.changelog dt {
+        font-weight: normal;
+        font-size: 90%;
+        color: var(--main-color);
+    }
+    dl.changelog dd {
+        /* font-family: var(--font-condensed);*/
+        font-size: 80%;
+        /*font-variation-settings: "wdth" 35;   */
+        font-stretch: ultra-condensed;
+        margin-block: 0.2rem;
+        margin-inline-start: 2rem;    
+    }
+    dl.changelog {
+        /* border-inline-start: 2px solid rgb(26 26 26); */
+        /* padding-inline-start: 15px; */
+        margin-inline-start: 12px;
+    }
+
+    ul.changelog li li, ol.changelog li {
+        font-size: 90%;
+        font-stretch: ultra-condensed;
+        /*font-family: var(--font-condensed);*/
+        /*font-variation-settings: "wdth" 35;*/
+    }
+    .changelog-old{
+        font-size: 90%;
+        font-stretch: ultra-condensed;
+        /*font-family: var(--font-condensed);*/
+        /*font-variation-settings: "wdth" 35;*/
+    }
+
+    /* Make a treee design*/
+    dl.changelog {
+        margin-inline-start: 10px;
+        /* padding-inline-start: 10px; */
+        border-inline-start: 2px solid var(--main-color);
+    }
+
+    dl.changelog dt:before {
+        content: "➠";
+        margin-right: 9px;
+        color: var(--main-color);
+    }
+</style>

@@ -1,11 +1,20 @@
 :root {
     --main-font-size: 19px;
-    --body-font-color: #244e78;
-    --font-main: "Roboto Flex Regular", "Arial", "Acumin Pro SemiCondensed";    //--font: condensed 20px "Roboto Flex Regular", "Arial", "Acumin Pro Condensed";
-    --section-padding-inline: 1.5rem;
-    --section-padding-block: 1rem;
+
+    --body-bg-color: white;
+    --body-font-color: #244e78; // Important ;#4e4e4e
     --main-color:rgb(207 63 63);
     --link-color: rgb(99, 131, 189);    //#5480d0;//#d05454;
+
+    --font-main: "Roboto Flex Regular", "Arial", "Acumin Pro SemiCondensed";    //--font: condensed 20px "Roboto Flex Regular", "Arial", "Acumin Pro Condensed";
+
+    --section-padding-inline: 1.5rem;
+    --section-padding-block: 1rem;
+
+    --header-color: rgb(105, 124, 117);
+    --header-color: rgb(37, 136, 99);
+    --header-color: rgb(219 122 58);
+    --header-color: var(--body-font-color);
 
     // Multi coloured nav header title
     --color-1: #186cb8;
@@ -60,3 +69,9 @@
 
     }
 }
+
+
+/*
+
+    green for header colors: rgb(37, 136, 99)
+*/

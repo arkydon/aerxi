@@ -55,6 +55,27 @@ templateEngine: [vto, md]
 {{/for}}
 
 
+<style scoped>
+    /* ====== About styling ==== */
+    table.table-about {
+        /* margin-block-start: 5px; */
+        padding: 1rem;
+    }
+    table.table-about td {
+        padding-inline-end: 1em;
+        /* border: 1px solid #393939; */
+        /* border-collapse: collapse; */
+    }
+    table.table-about tr td:first-child {
+        /* color: red; */
+        font-weight: 500;
+        /*font-family: var(--font-condensed);*/
+        text-transform: uppercase;
+    }
+</style>
+
+
+
 {{#
 
 {{set detailsData = [
