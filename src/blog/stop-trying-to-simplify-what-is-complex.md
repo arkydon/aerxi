@@ -1,10 +1,10 @@
 ---
-title: Stop trying to simplify what is complex
+title: Stop trying to simplify everything
 date: '2025-01-26T12:31:49.789Z'
 tags:
   - blog
 layout: layouts/post.vto
-desc: Stop trying to turn what is complex into something simple.
+desc: Stop trying to simplify everything.
 ---
 Maybe that thing bothering you and disrupting your peace, the thing you can’t accept or understand, is something **complex** that you keep trying to simplify in your head. It doesn’t fit into any typical box or cookie-cutter mold. You keep trying and failing to simplify it, and that makes you frustrated.
 
