@@ -1,5 +1,5 @@
 ---
-title : How and why I made this website
+title : Making this website
 date : 2024-06-07
 tags : 
     - blog
