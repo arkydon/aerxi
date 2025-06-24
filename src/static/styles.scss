@@ -10,6 +10,11 @@
     font-family: "Roboto Flex Regular", Arial, sans-serif;
     font-stretch: $stretch;
 }*/
+//@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62.5,100..900;1,62.5,100..900&display=swap');
+
+
+/* Important placeholder for Google Fonts plugin to insert font import code */
+/* google-fonts */
 
 body {
     display: flex; // Without this, there will be a space between Nav and main
@@ -61,11 +66,15 @@ body.dark-mode blockquote {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
-    margin-block: 1rem; //1rem
-    color: var(--main-color);
+    /*
     font-stretch: ultra-condensed;
     //font-variation-settings: "wdth" 35; //font-stretch: ultra-condensed;
+    */
+
+    //color: var(--main-color);
+    margin-block: 1rem;
+    font-weight: 500;
+    font-family: arch, "Roboto Flex Regular", Arial, sans-serif;
 }
 
 a {
