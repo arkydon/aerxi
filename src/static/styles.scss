@@ -197,6 +197,10 @@ li {
 .table-of-contents {
     color: #575757;
 }
+.table-of-contents ol li {
+    padding-block: .19rem;
+    font-size: 1rem;
+}
 
 main {
     display: flex;
