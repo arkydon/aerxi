@@ -176,6 +176,11 @@ h1.title-header {
 }
 
 // ====
+
+li {
+    /* font-size: smaller; */
+    padding-block: 0.5rem;
+}
 .hello-panel.panel {
     //padding-inline-end: 2rem;
     //background-color: #9ebbbd;
@@ -300,7 +305,7 @@ time.blog-post-date {
 }
 .blog-list ul li, .home-blog-list ul li{
     list-style-type: none;
-    margin-block-end: 1rem;
+    //margin-block-end: 1rem;
 }
 time.blog-list-date{
     font-size: 70%;
