@@ -19,7 +19,7 @@ layout: layouts/post.vto
 ### Images 
 - [Undraw](https://undraw.co/) : Free illustrations for website/ 
 	app/presentation/social,etc
-- [Stockcake](https://stockcake.com/) : AI generated stock images.
+<!-- - [Stockcake](https://stockcake.com/) : AI generated stock images. -->
 
 ### Icons
 - [Flaticon](https://www.flaticon.com/) - Free png icons.
