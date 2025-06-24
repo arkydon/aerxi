@@ -17,8 +17,7 @@ layout: layouts/post.vto
 - [ESO Images](https://www.eso.org/public/images/) : HQ images of space and earth from the European Space Observatory.
 
 ### Images 
-- [Undraw](https://undraw.co/) : Free illustrations for website/ 
-	app/presentation/social,etc
+- [Undraw](https://undraw.co/) : Free illustrations for website / app/presentation / social,etc
 <!-- - [Stockcake](https://stockcake.com/) : AI generated stock images. -->
 
 ### Icons
