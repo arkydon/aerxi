@@ -68,6 +68,8 @@ site.use(googleFonts({
     fonts:
         {
             Arch: "https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62.5,100..900;1,62.5,100..900&display=swap",
+            Andika: "https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+            headtitlefont: "https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
         }     
 }));
 
