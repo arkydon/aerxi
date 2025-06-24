@@ -15,26 +15,26 @@ layout: layouts/post.vto
 
 **⏳ Currently**
 
-- Watching Dota streams.
-- Horror movie binge.
-- Wandering through Google Street View spots around the world. (exploring on natural environments)
-- Javascript.
-- Slowly updating my website.
+- Watching Dota games on twitch
+- Horror movies
+- Exploring the world through Google Street View spots around the world
+- Tweaking website
 
 **📌 Planning**
 
-- Making another Pokemon rom hack.
-- Building a reading habit with ebooks
+- Make another Pokemon rom hack.
+- Read books
 
 **✔️ Done**
 
-- Remade my website using [lume](https://lume.land)
-- Upgraded to SSD + Windows 11 for better performance
-- Switching to Microsoft Edge + uBo lite on Android. Kiwi hadn't been updated in a long time and Edge supports extentions now.
-- ~Switching and migrating all my notes from Notion to Upnote. Notion was becoming too slow and laggy.~
+- Built my website again, this time using [lume](https://lume.land)
+- Upgraded to SSD for better performance on Win 11
+- Switched to Microsoft Edge + uBo lite on Android. Kiwi hadn't been updated in a long time.
+- ~Moved all my notes from Notion to Upnote. Notion was becoming too slow and laggy.~
 
 **⏸️ Paused**
 
 - Playing Pokemon Black Pearl Emerald.
 - Playing Dota games.
 - Tweaking my website design.
+- Javascript.
