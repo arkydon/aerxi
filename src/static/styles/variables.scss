@@ -1,20 +1,20 @@
 :root {
     --main-font-size: 20px;
+    --nav-link-size: 20px;
 
     --body-bg-color: white;
     --body-font-color: #244e78; // Important ;#4e4e4e
     --main-color:rgb(224 34 34);//rgb(207 63 63);
     --link-color: #28cb4d; //rgb(99, 131, 189);    //#5480d0;//#d05454;
-
+    --link-color: #60c9db91;
     --font-main: "Roboto Flex Regular", "Arial", "Acumin Pro SemiCondensed";    //--font: condensed 20px "Roboto Flex Regular", "Arial", "Acumin Pro Condensed";
 
     --section-padding-inline: 1.5rem;
     --section-padding-block: 1rem;
 
-    --header-color: rgb(105, 124, 117);
-    --header-color: rgb(37, 136, 99);
-    --header-color: rgb(219 122 58);
     --header-color: var(--body-font-color);
+    //--header-color: #3a8c9b;
+    //--header-color: var(--link-color);
 
     --toc-font-size: 1rem;
 
