@@ -36,7 +36,8 @@ site.add("blog")
 site.copy("static/fonts/RobotoFlex")
     .copy("static/favicon.ico")
     .copy("static/og.jpg")
-    .copy("robots.txt");
+    
+site.add("robots.txt");
 
 //site.use(picture())
 //    .use(transformImages())
