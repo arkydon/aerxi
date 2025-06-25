@@ -48,16 +48,6 @@ site.use(svgo())
 site.hooks.addMarkdownItPlugin(tocAnchor.default, { level: [1,2,3,4] });
 site.hooks.addMarkdownItPlugin(toc, { includeLevel: [2, 3, 4], listType : "ol"});
 
-/*
-site.use(googleFonts({
-    fonts:
-    {
-    rflex: "https://fonts.google.com/share?selection.family=Roboto+Flex:opsz,wght@8..144,100..1000",
-    rflex: "https://fonts.google.com/share?selection.family=Roboto+Flex:opsz,wdth,wght,GRAD@8..144,25..151,100..1000,-200..150",
-    }
-}));
-*/
-
 site.use(googleFonts({
     cssFile: "static/styles.css",
     placeholder: "/* google-fonts */",
