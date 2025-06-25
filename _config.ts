@@ -33,10 +33,10 @@ site.add("blog")
     .add("software")
     .add("web");
 
-site.copy("static/fonts/RobotoFlex")
-    .copy("static/favicon.ico")
-    .copy("static/og.jpg")
-    
+//site.copy("static/fonts/RobotoFlex");
+site.copy("static/favicon.ico")
+    .copy("static/og.jpg");
+
 site.add("robots.txt");
 
 //site.use(picture())
