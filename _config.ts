@@ -70,6 +70,7 @@ site.use(googleFonts({
             Arch: "https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62.5,100..900;1,62.5,100..900&display=swap",
             headtitlefont: "https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap",
             signfont: "https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500&display=swap",
+            "Roboto FLex": "https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,GRAD,XTRA@8..144,25..151,100..1000,-200..150,323..603&display=swap",
         }     
 }));
 
