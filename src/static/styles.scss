@@ -2,7 +2,8 @@
 //@use "./fonts/acuminpro";
 //@import "./fonts/roboflex.css";
 //@use "./fonts/robotoflex";
-
+/* Important placeholder for Google Fonts plugin to insert font import code */
+/* google-fonts */
 @use "./styles/variables.scss";
 //@use "./styles/articlestyling.scss";
 
@@ -13,8 +14,7 @@
 //@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62.5,100..900;1,62.5,100..900&display=swap');
 
 
-/* Important placeholder for Google Fonts plugin to insert font import code */
-/* google-fonts */
+
 
 body {
     display: flex; // Without this, there will be a space between Nav and main
