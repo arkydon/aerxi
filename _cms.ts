@@ -168,7 +168,7 @@ cms.collection({
 });
 
 
-cms.document("Changelog", "src:notes/changelog/index.vto", [
+cms.document("Changelog", "src:notes/changelog/_data/changelog.yaml", [
     "content: markdown",
 ]);
 
