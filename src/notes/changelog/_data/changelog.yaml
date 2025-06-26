@@ -1,0 +1,45 @@
+- date: "Jun 24, 2025"
+  changes:
+    - Redesign About page
+- date: "Jun 23, 2025"
+  changes:
+    - Changed header title font to Amatic SC
+    - Changed heading font to Archivo
+    - Tweaked variable font settings of body font (Counter width and grade of Roboto Flex)
+    - Changed body font word spacing
+    - Tweaked nav design
+- date: "Jun 23, 2025"
+  changes:
+    - Tweaked website design
+    - Tweaked lightbox gallery design
+- date: "Jun 22, 2025"
+  changes:
+    - Changed website design
+- date: "Jan 8, 2025"
+  changes:
+    - First build
+- date: "Jan 9, 2025"
+  changes:
+    - Added styling for widescreens
+    - Added an indication on the navigation links to show the current active page
+- date: "Jan 11, 2025"
+  changes:
+    - Switched font from Acumin Pro to [Roboto Flex](https://fonts.google.com/specimen/Roboto+Flex) (a variable font)
+    - Switched from Cloudflare analytics to Simple Analytics
+    - Changed color of body font to '#212427'
+- date: "Jan 13, 2025"
+  changes:
+    - Switched analytics to Cabin
+    - Added dark mode and dark mode toggle icons
+- date: "Jan 19, 2025"
+  changes:
+    - Added graphics to the Notes page
+- date: "Jan 20, 2025"
+  changes:
+    - '(Internal) Added code to manage blog with lume CMS'
+    - Tweak colour of hr
+- date: "Feb 6, 2025"
+  changes:
+    - Tweaked link style
+    - Changed design of Notes section
+    - Tweaked colours of multicolour hr line

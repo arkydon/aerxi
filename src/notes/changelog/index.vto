@@ -12,52 +12,26 @@ layout: layouts/post.vto
 > **2025 NOTE** : I have remade this site again from scratch using a different static site engine called **lume** : [🔗lume.land](https://lume.land)
 
 ### Changelog
-Jun 24, 2025:
-: Redesign About page
-
-Jun 23, 2025:
-: Changed header title font to **Amatic SC**
-: Changed heading font to **Archivo**
-: Tweaked variable font settings of body font (Counter width and grade of Roboto Flex)
-: Changed body font word spacing
-: Tweaked nav design
-
-Jun 23, 2025:
-: Tweaked website design
-: Tweaked lightbox gallery design
-
-Jun 22, 2025:
-: Changed website design
-
-Jan 8, 2025 : 
-: First build
- 
-Jan 9, 2025 : 
-: Added styling for widescreens
-: Added an indication on the navigation links to show the current active page
-
-Jan 11, 2025 : 
-: Switched font from Acumin Pro to [Roboto Flex](https://fonts.google.com/specimen/Roboto+Flex) (a variable font)
-: Switched from Cloudflare analytics to Simple Analytics
-: Changed color of body font to \#212427
-
-Jan 13, 2025 : 
-: Switched analytics to Cabin
-: Added dark mode and dark mode toggle icons
-
-Jan 19, 2025:
-: Added graphics to the Notes page
-
-Jan 20, 2025:
-: (Internal) Added code to manage blog with lume CMS
-: Tweak colour of hr
-
-Feb 6, 2025:
-: Tweaked link style
-: Changed design of Notes section
-: Tweaked colours of multicolour hr line
+{{for log of changelog}}
+{{#There must be a space here#}}
+    {{log.date}} :
+        {{for change of log.changes}}  
+            : {{change}}
+        {{/for}}
+    {{/for}}
 {.changelog}
 
+{{# Alt way using html
+{{for log of changelog}}
+<dl class="changelog">    
+    <dt>{{log.date}}<dt>
+    {{for changes of log.changes}}  
+        <dd>{{changes}}</dd>
+    {{/for}}
+{{/for}}
+</dl>
+{.changelog}
+#}}
 ---
 
 ### Todo
