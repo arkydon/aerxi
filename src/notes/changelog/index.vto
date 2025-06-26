@@ -21,7 +21,7 @@ layout: layouts/post.vto
     {{/for}}
 {.changelog}
 
-{{# Alt way using html
+{{# 1. Alt way using html
 {{for log of changelog}}
 <dl class="changelog">    
     <dt>{{log.date}}<dt>
@@ -31,6 +31,20 @@ layout: layouts/post.vto
 {{/for}}
 </dl>
 {.changelog}
+#}}
+
+
+{{# 2. Alt way using markdown only
+### Changelog
+Jun 24, 2025:
+: Redesign About page
+
+Jun 23, 2025:
+: Changed header title font to **Amatic SC**
+: Changed heading font to **Archivo**
+: Tweaked variable font settings of body font (Counter width and grade of Roboto Flex)
+: Changed body font word spacing
+: Tweaked nav design
 #}}
 ---
 
@@ -46,48 +60,6 @@ layout: layouts/post.vto
 
 {.changelog}
 
-
----
-
-#### This is the old changelog for my website before I switched to lume :
-
-1. - Redesigned header.
-   - Changed fonts from Barlow Condensed to Acumin Pro.
-2. Removed lightgallery JS library and made a simple custom lightbox implementation.
-3. - Added email link to the footer.
-   - Changed Opengraph image (image link preview).
-4. Replaced Meowth favicon with current one.
-5. Changed design of Hub _section_.
-6. - Fix margin spacing, list bullet image  being misaligned, footer margins. 
-   - Changed bullet styling in Hub section page. 
-   - Partially fixed dark mode colours.
-   - Created shortcode for \<details\>
-7. Renamed **Garden** section to **Hub**.  
-8. - Redesigned header.
-   - Changed hr design.
-   - Changed header pic.
-9. - Tweaked breadcrumb design
-   - Created shortcode for \<table\>
-   - Added "Default apps of 2024" to Hub/Android
-   - Added an entry to Hub/Photos
-   - Added tags to site and changed template of Hub/Photos to separate posts by tags
-10. Implemented an indicator to Navigation Links to show which section page is active.
-
-{.changelog-old}
-
-**Todo**
-
-1. ~~Fix dark mode~~
-2. Add like button to blog pages
-3. Show an indicator for visited links
-4. Add a widget or dashboard to homepage
-5. ~~Rename “Garden” to something better~~
-6. ~~Replace Cloudflare Analytics with something else.~~
-7. Switch to another SSG.
-
-{.changelog-old}
-
-
 <style scoped>
 
     /*=== Changelog styling ===*/
@@ -96,27 +68,12 @@ layout: layouts/post.vto
         font-size: 90%;
         color: var(--main-color);
     }
-    dl.changelog dd {
-        /* font-family: var(--font-condensed);*/
-        font-size: 80%;
-        /*font-variation-settings: "wdth" 35;   */
-        font-stretch: ultra-condensed;
-        margin-block: 0.2rem;
-        margin-inline-start: 2rem;    
-    }
     dl.changelog {
         /* border-inline-start: 2px solid rgb(26 26 26); */
         /* padding-inline-start: 15px; */
         margin-inline-start: 12px;
     }
-
     ul.changelog li li, ol.changelog li {
-        font-size: 90%;
-        font-stretch: ultra-condensed;
-        /*font-family: var(--font-condensed);*/
-        /*font-variation-settings: "wdth" 35;*/
-    }
-    .changelog-old{
         font-size: 90%;
         font-stretch: ultra-condensed;
         /*font-family: var(--font-condensed);*/
