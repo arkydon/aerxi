@@ -153,7 +153,6 @@ span.nav-link-divider {
 }
 
 h1.title-header {
-    //margin-block: 0rem;
     font-variation-settings: "wdth" 60, "wght" 400;
     font-family: headtitlefont;
     font-weight: 700;;
@@ -163,8 +162,6 @@ h1.title-header {
 .title-header a {
     text-decoration: none;
     text-transform: uppercase;
-    //color: var(--body-font-color);
-    //color:var(--header-color);
     color: var(--main-color);
 }
 
@@ -310,7 +307,6 @@ time.blog-post-date {
 }
 .blog-list ul li, .home-blog-list ul li{
     list-style-type: none;
-    //margin-block-end: 1rem;
 }
 time.blog-list-date{
     font-size: 70%;
