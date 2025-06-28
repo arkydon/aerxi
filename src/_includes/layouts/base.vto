@@ -35,23 +35,23 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-        const links = document.querySelectorAll("nav a");
-        const currentUrl = window.location.href;
-        const currentUrlPath = window.location.pathname; // Extract pathname for faster comparisons
+            const links = document.querySelectorAll("nav a");
+            const currentUrl = window.location.href;
+            const currentUrlPath = window.location.pathname; // Extract pathname for faster comparisons
 
-        links.forEach(link => {
-            const linkHref = link.href; 
-            const linkPath = link.pathname; // Extract pathname for faster comparisons
+            links.forEach(link => {
+                const linkHref = link.href; 
+                const linkPath = link.pathname; // Extract pathname for faster comparisons
 
-            // Handle the Home link efficiently
-            if (linkPath === "/" || linkPath === "") {
-            link.classList.toggle("active", currentUrlPath === "/" || currentUrlPath === ""); 
-            return; // Exit the loop for home link
-            }
+                // Handle the Home link efficiently
+                if (linkPath === "/" || linkPath === "") {
+                    link.classList.toggle("active", currentUrlPath === "/" || currentUrlPath === ""); 
+                    return; // Exit the loop for home link
+                }
 
-            // Check if current URL starts with the link's href
-            link.classList.toggle("active", currentUrl.startsWith(linkHref)); 
-        });
+                // Check if current URL starts with the link's href
+                link.classList.toggle("active", currentUrl.startsWith(linkHref)); 
+            });
         });
     </script>
 
