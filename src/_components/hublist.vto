@@ -1,5 +1,7 @@
 ### {{title}}
 
+{{# All pages from Media, Soft, Notes, Web are tagged as hub #}}
+
 <ul>
   {{ for page of search.pages(`hub ${hubtag}`) }}
   <li class={{hubtag}}> <a href={{page.url}}> {{ page.title }} </a></li>
