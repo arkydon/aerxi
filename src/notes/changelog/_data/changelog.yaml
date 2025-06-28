@@ -1,3 +1,7 @@
+- date: "Jun 28, 2025"
+  changes:
+    - Moved footer code to a partial
+    - Test using lite analytics 
 - date: "Jun 24, 2025"
   changes:
     - Redesign About page
