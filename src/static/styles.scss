@@ -22,7 +22,6 @@ body {
 
     font-family: var(--font-main);
     font-size: var(--main-font-size);
-    //font-variation-settings: "wdth" 90;
     font-stretch: semi-condensed;
     line-height: 1.5;
     max-width: 40em;
@@ -34,7 +33,6 @@ body {
     -moz-osx-font-smoothing: grayscale;  /* For Firefox on macOS */
 
     //font-variation-settings: "wght" 430;
-    //font-variation-settings: "GRAD" 15, "XTRA" 380;
     font-variation-settings: "GRAD" 15, "XTRA" 436;
     word-spacing: 2px;
 }
@@ -68,22 +66,13 @@ body.dark-mode blockquote {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /*
-    font-stretch: ultra-condensed;
-    //font-variation-settings: "wdth" 35; //font-stretch: ultra-condensed;
-    */
-
     color: var(--main-color);
     margin-block: 1rem;
     font-weight: 400;
     font-family: arch, "Roboto Flex Regular", Arial, sans-serif;
 }
 
-a {
-    //text-decoration: none;
-    //text-decoration: 2px underline dashed var(--link-color);
-    //color: var(--link-color);
-    //text-decoration-color: var(--main-color);    
+a {    
     text-underline-offset: 4px;
     color: inherit;
     text-decoration-color: var(--link-color);   
