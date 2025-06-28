@@ -7,11 +7,12 @@ import lightningCSS from "lume/plugins/lightningcss.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import date from "lume/plugins/date.ts";
 import googleFonts from "lume/plugins/google_fonts.ts";
-
 import toc from "npm:markdown-it-table-of-contents";
 import tocAnchor from "npm:markdown-it-anchor";
+//import remark from "lume/plugins/remark.ts";
+//import remarkAttr from "npm:remark-attr";   //For adding classes to elements in markdown
 
-import sheets from "lume/plugins/sheets.ts";
+//import sheets from "lume/plugins/sheets.ts";
 
 const site = lume({
     location: new URL("https://arky.pages.dev"),
@@ -34,8 +35,8 @@ site.add("blog")
     .add("web");
 
 //site.copy("static/fonts/RobotoFlex");
-site.copy("static/favicon.ico")
-    .copy("static/og.jpg");
+site.copy("static/favicon.ico");
+site.add("static/og.jpg");
 //site.copy("static/hub");
 site.add("robots.txt");
 
@@ -43,8 +44,8 @@ site.add("robots.txt");
 //    .use(transformImages())
 
 site.use(svgo())
-    .use(date())
-    .use(sheets());
+    .use(date());
+    //.use(sheets());
 
 site.hooks.addMarkdownItPlugin(tocAnchor.default, { level: [1,2,3,4] });
 site.hooks.addMarkdownItPlugin(toc, { includeLevel: [2, 3, 4], listType : "ol"});
@@ -64,5 +65,6 @@ site.use(googleFonts({
             "Roboto FLex": "https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,GRAD,XTRA@8..144,25..151,100..1000,-200..150,323..603&display=swap",
         }     
 }));
+
 
 export default site;
