@@ -2,9 +2,20 @@
 
 <div class="gallery">
     {{ for image of images }}
+
+            {{#
+            This is the new logic to generate the thumbnail path.
+            1. Get the filename from the full path (e.g., "my-photo.jpg").
+            2. Remove the file extension (e.g., "my-photo").
+            3. Construct the new path: "thumbnail/" + "my-photo" + "_thumb.jpg".
+        #}}
+        {{ set filename = image.src.split('/').pop() }}
+        {{ set nameWithoutExt = filename.split('.').slice(0, -1).join('.') }}
+        {{ set thumbSrc = "thumbnails/" + nameWithoutExt + "_thumb.jpg" }}
+
         <figure class="gallery-item">
             <img 
-                src="{{ image.src }}" 
+                src="{{ thumbSrc }}" 
                 alt="{{ image.alt }}" 
                 loading="lazy"
                 onclick="openLightbox('{{ image.src}}')"
