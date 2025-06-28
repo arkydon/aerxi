@@ -3,20 +3,20 @@
     --nav-link-size: 20px;
 
     --body-bg-color: white;
-    --body-font-color: #244e78; // Important ;#4e4e4e
-    --main-color:rgb(224 34 34);//rgb(207 63 63);
-    --link-color: #28cb4d; //rgb(99, 131, 189);    //#5480d0;//#d05454;
+    --body-font-color: #244e78;
+    --main-color:rgb(224 34 34);
+    --link-color: #28cb4d;
     --link-color: #60c9db91;
     --font-main: "Roboto Flex", "Arial", "Acumin Pro SemiCondensed";    //--font: condensed 20px "Roboto Flex Regular", "Arial", "Acumin Pro Condensed";
 
-    --section-padding-inline: 1.5rem;
-    --section-padding-block: 1rem;
+    //--section-padding-inline: 1.5rem;
+    //--section-padding-block: 1rem;
 
     --header-color: var(--body-font-color);
-    //--header-color: #3a8c9b;
-    //--header-color: var(--link-color);
 
     --toc-font-size: 1rem;
+
+    // --- Unused ----
 
     // Multi coloured nav header title
     --color-1: #186cb8;
@@ -35,16 +35,6 @@
     --col-7: rgba(211, 97, 199);     // Rose pink
     --col-8: rgba(255, 182, 193, 1);    // Light pink
 
-    // --- Unused ----
-
-    /*
-    --color-1: var(--header-title-color);
-    --color-2: var(--color-1);
-    --color-3: var(--color-1);
-    --color-4: var(--color-1);
-    --color-5: var(--color-1);
-    */
-
 }
 
 @media screen and (min-width:600px){
@@ -60,9 +50,3 @@
 
     }
 }
-
-
-/*
-
-    green for header colors: rgb(37, 136, 99)
-*/
