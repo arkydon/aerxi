@@ -2,6 +2,7 @@
   changes:
     - Moved footer code to a partial
     - Test using lite analytics 
+    - Changed lightbox gallery to use thumbnail images 
 - date: "Jun 24, 2025"
   changes:
     - Redesign About page
