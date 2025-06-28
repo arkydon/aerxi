@@ -56,50 +56,50 @@
     </script>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const themeToggleBtn = document.getElementById('theme-toggle-btn');
-        const themeToggleIconContainer = document.getElementById('theme-toggle-icon');
-        const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleBtn = document.getElementById('theme-toggle-btn');
+            const themeToggleIconContainer = document.getElementById('theme-toggle-icon');
+            const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
 
-        const sunSvg = `
-            <svg id="theme-toggle-icon" width="25px" height="25px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Energy20"></g> <g id="Energy19"></g> <g id="Energy18"></g> <g id="Energy17"></g> <g id="Energy16"></g> <g id="Energy15"></g> <g id="Energy14"></g> <g id="Energy13"></g> <g id="Energy12"></g> <g id="Energy11"></g> <g id="Energy10"></g> <g id="Energy09"></g> <g id="Energy08"></g> <g id="Energy07"></g> <g id="Energy06"></g> <g id="Energy05"></g> <g id="Energy04"></g> <g id="Energy03"></g> <g id="Energy02"> <g> <path d="M30.63,16.77l-4.29,3.51l0.55,5.52c0.03,0.3-0.07,0.59-0.28,0.81c-0.22,0.21-0.51,0.31-0.81,0.28 l-5.52-0.55l-3.51,4.29C16.58,30.86,16.3,31,16,31s-0.58-0.14-0.77-0.37l-3.51-4.29L6.2,26.89c-0.3,0.03-0.59-0.07-0.81-0.28 c-0.21-0.22-0.31-0.51-0.28-0.81l0.55-5.52l-4.29-3.51C1.14,16.58,1,16.3,1,16s0.14-0.58,0.37-0.77l4.29-3.51L5.11,6.2 C5.08,5.9,5.18,5.61,5.39,5.39C5.61,5.18,5.9,5.07,6.2,5.11l5.52,0.55l3.51-4.29c0.37-0.47,1.17-0.47,1.54,0l3.51,4.29l5.52-0.55 c0.3-0.04,0.59,0.07,0.81,0.28C26.82,5.61,26.92,5.9,26.89,6.2l-0.55,5.52l4.29,3.51C30.86,15.42,31,15.7,31,16 S30.86,16.58,30.63,16.77z" fill="#FFB841"></path> </g> <g> <path d="M23,16c0,3.86-3.14,7-7,7s-7-3.14-7-7s3.14-7,7-7S23,12.14,23,16z" fill="#EB8235"></path> </g> </g> <g id="Energy01"></g> </g></svg>
-        `;
+            const sunSvg = `
+                <svg id="theme-toggle-icon" width="25px" height="25px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Energy20"></g> <g id="Energy19"></g> <g id="Energy18"></g> <g id="Energy17"></g> <g id="Energy16"></g> <g id="Energy15"></g> <g id="Energy14"></g> <g id="Energy13"></g> <g id="Energy12"></g> <g id="Energy11"></g> <g id="Energy10"></g> <g id="Energy09"></g> <g id="Energy08"></g> <g id="Energy07"></g> <g id="Energy06"></g> <g id="Energy05"></g> <g id="Energy04"></g> <g id="Energy03"></g> <g id="Energy02"> <g> <path d="M30.63,16.77l-4.29,3.51l0.55,5.52c0.03,0.3-0.07,0.59-0.28,0.81c-0.22,0.21-0.51,0.31-0.81,0.28 l-5.52-0.55l-3.51,4.29C16.58,30.86,16.3,31,16,31s-0.58-0.14-0.77-0.37l-3.51-4.29L6.2,26.89c-0.3,0.03-0.59-0.07-0.81-0.28 c-0.21-0.22-0.31-0.51-0.28-0.81l0.55-5.52l-4.29-3.51C1.14,16.58,1,16.3,1,16s0.14-0.58,0.37-0.77l4.29-3.51L5.11,6.2 C5.08,5.9,5.18,5.61,5.39,5.39C5.61,5.18,5.9,5.07,6.2,5.11l5.52,0.55l3.51-4.29c0.37-0.47,1.17-0.47,1.54,0l3.51,4.29l5.52-0.55 c0.3-0.04,0.59,0.07,0.81,0.28C26.82,5.61,26.92,5.9,26.89,6.2l-0.55,5.52l4.29,3.51C30.86,15.42,31,15.7,31,16 S30.86,16.58,30.63,16.77z" fill="#FFB841"></path> </g> <g> <path d="M23,16c0,3.86-3.14,7-7,7s-7-3.14-7-7s3.14-7,7-7S23,12.14,23,16z" fill="#EB8235"></path> </g> </g> <g id="Energy01"></g> </g></svg>
+            `;
 
-        const moonSvg = `
-            <svg id="theme-toggle-icon" width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M18 2.75C17.5858 2.75 17.25 2.41421 17.25 2C17.25 1.58579 17.5858 1.25 18 1.25H22C22.3034 1.25 22.5768 1.43273 22.6929 1.71299C22.809 1.99324 22.7449 2.31583 22.5304 2.53033L19.8107 5.25H22C22.4142 5.25 22.75 5.58579 22.75 6C22.75 6.41421 22.4142 6.75 22 6.75H18C17.6967 6.75 17.4232 6.56727 17.3071 6.28701C17.191 6.00676 17.2552 5.68417 17.4697 5.46967L20.1894 2.75H18ZM13.5 8.75C13.0858 8.75 12.75 8.41421 12.75 8C12.75 7.58579 13.0858 7.25 13.5 7.25H16.5C16.8034 7.25 17.0768 7.43273 17.1929 7.71299C17.309 7.99324 17.2449 8.31583 17.0304 8.53033L15.3107 10.25H16.5C16.9142 10.25 17.25 10.5858 17.25 11C17.25 11.4142 16.9142 11.75 16.5 11.75H13.5C13.1967 11.75 12.9232 11.5673 12.8071 11.287C12.691 11.0068 12.7552 10.6842 12.9697 10.4697L14.6894 8.75H13.5Z" fill="#ffffff"></path> <path opacity="0.5" d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#ffffff"></path> </g></svg>
-        `;
+            const moonSvg = `
+                <svg id="theme-toggle-icon" width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M18 2.75C17.5858 2.75 17.25 2.41421 17.25 2C17.25 1.58579 17.5858 1.25 18 1.25H22C22.3034 1.25 22.5768 1.43273 22.6929 1.71299C22.809 1.99324 22.7449 2.31583 22.5304 2.53033L19.8107 5.25H22C22.4142 5.25 22.75 5.58579 22.75 6C22.75 6.41421 22.4142 6.75 22 6.75H18C17.6967 6.75 17.4232 6.56727 17.3071 6.28701C17.191 6.00676 17.2552 5.68417 17.4697 5.46967L20.1894 2.75H18ZM13.5 8.75C13.0858 8.75 12.75 8.41421 12.75 8C12.75 7.58579 13.0858 7.25 13.5 7.25H16.5C16.8034 7.25 17.0768 7.43273 17.1929 7.71299C17.309 7.99324 17.2449 8.31583 17.0304 8.53033L15.3107 10.25H16.5C16.9142 10.25 17.25 10.5858 17.25 11C17.25 11.4142 16.9142 11.75 16.5 11.75H13.5C13.1967 11.75 12.9232 11.5673 12.8071 11.287C12.691 11.0068 12.7552 10.6842 12.9697 10.4697L14.6894 8.75H13.5Z" fill="#ffffff"></path> <path opacity="0.5" d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#ffffff"></path> </g></svg>
+            `;
 
-        // Check if the user has a saved theme preference
-        const currentTheme = localStorage.getItem('theme') || 'light-mode';
-        document.body.classList.add(currentTheme);
+            // Check if the user has a saved theme preference
+            const currentTheme = localStorage.getItem('theme') || 'light-mode';
+            document.body.classList.add(currentTheme);
 
-        // Update the icon based on the current theme
-        if (currentTheme === 'dark-mode') {
-            themeToggleIconContainer.outerHTML = moonSvg;
-            themeToggleBtn.innerHTML = moonSvg; // Ensure the button contains the new SVG
-            themeColorMetaTag.setAttribute('content', '#272727');
-        } else {
-            themeToggleIconContainer.outerHTML = sunSvg;
-            themeToggleBtn.innerHTML = sunSvg; // Ensure the button contains the new SVG
-            themeColorMetaTag.setAttribute('content', '#ffffff');
-        }
-
-        themeToggleBtn.addEventListener('click', () => {
-            if (document.body.classList.contains('light-mode')) {
-                document.body.classList.remove('light-mode');
-                document.body.classList.add('dark-mode');
-                themeToggleBtn.innerHTML = moonSvg;
+            // Update the icon based on the current theme
+            if (currentTheme === 'dark-mode') {
+                themeToggleIconContainer.outerHTML = moonSvg;
+                themeToggleBtn.innerHTML = moonSvg; // Ensure the button contains the new SVG
                 themeColorMetaTag.setAttribute('content', '#272727');
-                localStorage.setItem('theme', 'dark-mode');
             } else {
-                document.body.classList.remove('dark-mode');
-                document.body.classList.add('light-mode');
-                themeToggleBtn.innerHTML = sunSvg;
+                themeToggleIconContainer.outerHTML = sunSvg;
+                themeToggleBtn.innerHTML = sunSvg; // Ensure the button contains the new SVG
                 themeColorMetaTag.setAttribute('content', '#ffffff');
-                localStorage.setItem('theme', 'light-mode');
             }
+
+            themeToggleBtn.addEventListener('click', () => {
+                if (document.body.classList.contains('light-mode')) {
+                    document.body.classList.remove('light-mode');
+                    document.body.classList.add('dark-mode');
+                    themeToggleBtn.innerHTML = moonSvg;
+                    themeColorMetaTag.setAttribute('content', '#272727');
+                    localStorage.setItem('theme', 'dark-mode');
+                } else {
+                    document.body.classList.remove('dark-mode');
+                    document.body.classList.add('light-mode');
+                    themeToggleBtn.innerHTML = sunSvg;
+                    themeColorMetaTag.setAttribute('content', '#ffffff');
+                    localStorage.setItem('theme', 'light-mode');
+                }
+            });
         });
-    });
     </script>
     <!-- 100% privacy-first cabin analytics
         <script async defer src="https://scripts.withcabin.com/hello.js"></script>
