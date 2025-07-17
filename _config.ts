@@ -1,12 +1,13 @@
 import lume from "lume/mod.ts";
 import sass from "lume/plugins/sass.ts";
-import picture from "lume/plugins/picture.ts";
-import transformImages from "lume/plugins/transform_images.ts";
+//import picture from "lume/plugins/picture.ts";
+//import transformImages from "lume/plugins/transform_images.ts";
 import svgo from "lume/plugins/svgo.ts";
-import lightningCSS from "lume/plugins/lightningcss.ts";
+//import lightningCSS from "lume/plugins/lightningcss.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import date from "lume/plugins/date.ts";
 import googleFonts from "lume/plugins/google_fonts.ts";
+//import icons from "lume/plugins/icons.ts";
 import toc from "npm:markdown-it-table-of-contents";
 import tocAnchor from "npm:markdown-it-anchor";
 //import remark from "lume/plugins/remark.ts";
@@ -66,5 +67,6 @@ site.use(googleFonts({
         }     
 }));
 
+//site.use(icons(/* Options */));
 
 export default site;
