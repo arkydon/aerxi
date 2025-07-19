@@ -15,15 +15,14 @@ layout: layouts/post.vto
 
 **⏳ Currently**
 
-- Watching Dota games on twitch
-- Horror movies
-- Exploring the world through Google Street View spots around the world
+- Playing Pokemon rom hacks
+- Watching horror movies
+- Exploring google streetview spots around the world
 - Tweaking website
 
 **📌 Planning**
 
 - Make another Pokemon rom hack.
-- Read books
 
 **✔️ Done**
 
@@ -31,6 +30,7 @@ layout: layouts/post.vto
 - Upgraded to SSD for better performance on Win 11
 - Switched to Microsoft Edge + uBo lite on Android. Kiwi hadn't been updated in a long time.
 - ~Moved all my notes from Notion to Upnote. Notion was becoming too slow and laggy.~
+- Pokemon Imperium
 
 **⏸️ Paused**
 
@@ -38,3 +38,4 @@ layout: layouts/post.vto
 - Playing Dota games.
 - Tweaking my website design.
 - Javascript.
+- Watching Dota games on twitch
