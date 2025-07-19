@@ -20,9 +20,13 @@ layout: layouts/post.vto
 - Exploring google streetview spots around the world
 - Tweaking website
 
+---
+
 **📌 Planning**
 
 - Make another Pokemon rom hack.
+
+---
 
 **✔️ Done**
 
@@ -31,6 +35,8 @@ layout: layouts/post.vto
 - Switched to Microsoft Edge + uBo lite on Android. Kiwi hadn't been updated in a long time.
 - ~Moved all my notes from Notion to Upnote. Notion was becoming too slow and laggy.~
 - Pokemon Imperium
+
+---
 
 **⏸️ Paused**
 
