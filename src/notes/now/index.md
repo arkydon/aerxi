@@ -11,7 +11,7 @@ layout: layouts/post.vto
 
 *Last updated: July 2025*
 
-> This is my [now page](https://nownownow.com/about) - inspired by Derek Sivers' movement to share what we're currently focused on.
+> This is my [now page](https://nownownow.com/about) - inspired by Derek Sivers
 
 **⏳ Currently**
 
