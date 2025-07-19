@@ -30,10 +30,8 @@ layout: layouts/post.vto
 
 **✔️ Done**
 
-- Built my website again, this time using [lume](https://lume.land)
+- Built my website again using [lume](https://lume.land)
 - Upgraded to SSD for better performance on Win 11
-- Switched to Microsoft Edge + uBo lite on Android. Kiwi hadn't been updated in a long time.
-- ~Moved all my notes from Notion to Upnote. Notion was becoming too slow and laggy.~
 - Pokemon Imperium
 
 ---
