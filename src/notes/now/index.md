@@ -15,7 +15,8 @@ layout: layouts/post.vto
 
 **⏳ Currently**
 
-- Playing Pokemon rom hacks
+- Pinterest
+- Preparing for autumn
 - Watching horror movies
 - Exploring google streetview spots around the world
 - Tweaking website
@@ -31,15 +32,15 @@ layout: layouts/post.vto
 **✔️ Done**
 
 - Built my website again using [lume](https://lume.land)
-- Upgraded to SSD for better performance on Win 11
-- Pokemon Imperium
+- Upgraded to SSD for better Win 11 performance
+
 
 ---
 
 **⏸️ Paused**
 
-- Playing Pokemon Black Pearl Emerald.
-- Playing Dota games.
-- Tweaking my website design.
+- Playing Pokemon rom hacks
+- Playing Dota
+- Tweaking my website design
 - Javascript.
 - Watching Dota games on twitch
