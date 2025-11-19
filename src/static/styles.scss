@@ -110,6 +110,7 @@ nav {
     display: flex;
     place-content: flex-start;
     justify-content: flex-start;
+    overflow-x: auto;
 
     a {
         text-decoration: none; // remove underline on nav items
